@@ -1,4 +1,4 @@
-package org.retailmanager.rest;
+package org.retailmanager.base;
 
 import org.junit.runner.RunWith;
 import org.retailmanager.init.Application;
@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes=Application.class)
-public abstract class AbstrctTest {
+public abstract class BaseTest {
 	
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 	

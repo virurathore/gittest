@@ -1,0 +1,55 @@
+{
+	"id": "d8bb7f30-3a37-d20a-b81f-25e4faec6570",
+	"name": "retailmanager",
+	"description": "",
+	"order": [
+		"ca853820-a5e8-91dc-e371-cb9ee852d398",
+		"3b9e059c-d067-a664-04df-d3099f54232f"
+	],
+	"folders": [],
+	"timestamp": 1471252656514,
+	"owner": 0,
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "3b9e059c-d067-a664-04df-d3099f54232f",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "http://localhost:8000/api/shops",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471284785743,
+			"name": "addshops",
+			"description": "",
+			"collectionId": "d8bb7f30-3a37-d20a-b81f-25e4faec6570",
+			"responses": [],
+			"rawModeData": "{\n\"shopName\": \"testShop333\",\n    \"shopAddress\": {\n      \"number\": 1600,\n      \"postCode\": \"941432\"\n    }\n}"
+		},
+		{
+			"id": "ca853820-a5e8-91dc-e371-cb9ee852d398",
+			"headers": "",
+			"url": "http://localhost:8000/api/shops?customerLongitude=432.0&customerLatitude=941.0",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471284782073,
+			"name": "search",
+			"description": "",
+			"collectionId": "d8bb7f30-3a37-d20a-b81f-25e4faec6570",
+			"responses": []
+		}
+	]
+}

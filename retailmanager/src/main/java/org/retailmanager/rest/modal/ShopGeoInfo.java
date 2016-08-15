@@ -29,5 +29,11 @@ public class ShopGeoInfo {
 		this.shopLatitude = lat;
 	}
 	
+	@Override
+	public String toString(){
+		return "lat : "+Double.toString(shopLatitude) +"\t lng :"+Double.toString(shopLongitude);
+		
+	}
+	
 
 }

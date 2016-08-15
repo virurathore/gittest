@@ -1,0 +1,15 @@
+org\retailmanager\rest\modal\ShopInfo.class
+org\retailmanager\api\response\ShopsResponseVO.class
+org\retailmanager\rest\repository\ShopsRepository.class
+org\retailmanager\api\RetailsManagerController.class
+org\retailmanager\init\Application.class
+org\retailmanager\rest\repository\IShopsRepository.class
+org\retailmanager\rest\modal\StoreGeoCode.class
+org\retailmanager\api\IRetailManagerController.class
+org\retailmanager\api\request\ShopRequestVO.class
+org\retailmanager\geocode\restclient\IGoogleGeoCodeClient.class
+org\retailmanager\geocode\restclient\GoogleGeoCodeClient.class
+org\retailmanager\rest\bs\IRetailsManager.class
+org\retailmanager\rest\bs\RetailManagerService.class
+org\retailmanager\rest\modal\ShopAddress.class
+org\retailmanager\rest\modal\ShopGeoInfo.class
