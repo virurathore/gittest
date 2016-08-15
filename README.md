@@ -32,10 +32,10 @@ we list technical items to takne care for prodction ready
 * Unit Teting and functional testing : which should cover all kind scanrio to handle error and exceptions.	
 
 #TasksList
-[] make google geocode connection
-[] update unit test cases
-[] error handling
-[] use DB
-[] accutator for monitoring of service
-[] update comments and documentaion. 
+* [ ] make google geocode connection
+* [ ] update unit test cases
+* [ ] error handling
+* [ ] use DB
+* [ ] accutator for monitoring of service
+* [ ] update comments and documentaion. 
 	
