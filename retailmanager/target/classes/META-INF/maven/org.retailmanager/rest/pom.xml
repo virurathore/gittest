@@ -7,11 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<parent>
-
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.RELEASE</version>
-
+		<version>1.3.5.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -36,9 +34,6 @@
 			<artifactId>google-maps-services</artifactId>
 			<version>0.1.15</version>
 		</dependency>
-
-
-
 	</dependencies>
 
 	<build>
