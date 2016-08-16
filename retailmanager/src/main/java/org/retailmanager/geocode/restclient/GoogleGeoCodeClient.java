@@ -14,6 +14,12 @@ import com.google.maps.model.AddressComponentType;
 import com.google.maps.model.GeocodingResult;
 import com.google.maps.model.LatLng;
 
+/**
+ * @author Viru
+ *
+ * This can use WebTarget approach to access rest service, but as we have client library exposed, 
+ * it will help to get response POJO, if we use WebTarget, we need to define and map POJO based on response json string.
+ */
 @Component 
 public class GoogleGeoCodeClient implements IGoogleGeoCodeClient {
 	

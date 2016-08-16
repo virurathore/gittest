@@ -53,13 +53,18 @@ public class RetailsManagerController implements IRetailManagerController {
 		shopGeoInfo.setShopLatitude(customerLatitude);
 		shopGeoInfo.setShopLongitude(customerLongitude);
 		Collection<ShopInfo> shops = retailManager.getShops(shopGeoInfo);
-		List<ShopsResponseVO> shopsList = new ArrayList<ShopsResponseVO>();
+		List<ShopsResponseVO> shopsList = null;
 		if (shops != null) {
 			for (ShopInfo shopInfo : shops) {
+				if(shopsList == null)
+					shopsList  = new ArrayList<ShopsResponseVO>();
 				shopsList.add(mapShops(shopInfo));
 			}
 		}
-		return new ResponseEntity<Collection<ShopsResponseVO>>(shopsList, HttpStatus.OK);
+		if(shopsList.size()>0)
+			return new ResponseEntity<Collection<ShopsResponseVO>>(shopsList, HttpStatus.OK);
+		else
+			return new ResponseEntity<Collection<ShopsResponseVO>>(shopsList, HttpStatus.NO_CONTENT);
 	}
 
 	/**
