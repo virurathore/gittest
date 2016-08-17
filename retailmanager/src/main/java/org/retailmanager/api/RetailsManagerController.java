@@ -32,7 +32,7 @@ public class RetailsManagerController implements IRetailManagerController {
 	 */
 	@Override
 	public ResponseEntity<ShopsResponseVO> addShop(@RequestBody ShopRequestVO shopRequestVO) {
-		logger.info("addShop called : "+shopRequestVO);
+		logger.info("addShop called : " + shopRequestVO);
 		shopRequestVO.print();
 		ShopInfo shopInfo = retailManager.addShop(shopRequestVO);
 		ShopsResponseVO shops = mapShops(shopInfo);
@@ -56,15 +56,16 @@ public class RetailsManagerController implements IRetailManagerController {
 		List<ShopsResponseVO> shopsList = null;
 		if (shops != null) {
 			for (ShopInfo shopInfo : shops) {
-				if(shopsList == null)
-					shopsList  = new ArrayList<ShopsResponseVO>();
+				if (shopsList == null)
+					shopsList = new ArrayList<ShopsResponseVO>();
 				shopsList.add(mapShops(shopInfo));
 			}
 		}
-		if(shopsList.size()>0)
+		if (shopsList != null) {
 			return new ResponseEntity<Collection<ShopsResponseVO>>(shopsList, HttpStatus.OK);
-		else
+		} else {
 			return new ResponseEntity<Collection<ShopsResponseVO>>(shopsList, HttpStatus.NO_CONTENT);
+		}
 	}
 
 	/**

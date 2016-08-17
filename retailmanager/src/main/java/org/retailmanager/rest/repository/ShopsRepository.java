@@ -6,27 +6,24 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.retailmanager.rest.bs.RetailManagerService;
 import org.retailmanager.rest.modal.ShopAddress;
 import org.retailmanager.rest.modal.ShopGeoInfo;
 import org.retailmanager.rest.modal.ShopInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author Viru
- * we have used in-memory hashmap to store data, this can be converted to ORM DB or some in-memory DB
- * if used DB  
- *     remove looping to find based on postal code.
+ * @author Viru we have used in-memory hashmap to store data, this can be
+ *         converted to ORM DB or some in-memory DB if used DB remove looping to
+ *         find based on postal code.
  *
  */
 @Repository
-//@Component
+// @Component
 public class ShopsRepository implements IShopsRepository {
 	private Logger logger = LoggerFactory.getLogger(ShopsRepository.class);
-	
+
 	private static BigInteger nextId;
 	private static Map<BigInteger, ShopInfo> shopInfoMap;
 
@@ -35,9 +32,9 @@ public class ShopsRepository implements IShopsRepository {
 		logger.info("save called");
 		return ShopsRepository.saveShopInfo(shopInfo);
 	}
-	
+
 	private static ShopInfo saveShopInfo(ShopInfo shopInfo) {
-		if(shopInfoMap == null){
+		if (shopInfoMap == null) {
 			shopInfoMap = new HashMap<BigInteger, ShopInfo>();
 			nextId = BigInteger.ONE;
 		}
@@ -50,12 +47,12 @@ public class ShopsRepository implements IShopsRepository {
 	@Override
 	public List<ShopInfo> findAll(String postalCode) {
 		logger.info("find all called");
-		List<ShopInfo> shopList=null;
-		if(shopInfoMap!=null) {
-			for(ShopInfo shopInfo:shopInfoMap.values()){
-				if(shopInfo.getShopAddress()!=null && 
-						postalCode.equalsIgnoreCase(shopInfo.getShopAddress().getPostCode())){
-					if(shopList==null){
+		List<ShopInfo> shopList = null;
+		if (shopInfoMap != null) {
+			for (ShopInfo shopInfo : shopInfoMap.values()) {
+				if (shopInfo.getShopAddress() != null
+						&& postalCode.equalsIgnoreCase(shopInfo.getShopAddress().getPostCode())) {
+					if (shopList == null) {
 						shopList = new ArrayList<ShopInfo>();
 					}
 					shopList.add(shopInfo);
@@ -64,14 +61,13 @@ public class ShopsRepository implements IShopsRepository {
 		}
 		return shopList;
 	}
-	
-	
+
 	static {
 		ShopInfo shopInfo = new ShopInfo();
 		shopInfo.setShopName("testShop");
 		ShopAddress shopAddress = new ShopAddress();
 		shopAddress.setNumber(1600);
-		shopAddress.setPostCode("94043");
+		shopAddress.setPostCode("941432");
 		shopInfo.setShopAddress(shopAddress);
 		ShopGeoInfo shopGeoInfo = new ShopGeoInfo();
 		shopGeoInfo.setShopLatitude(40.714224);

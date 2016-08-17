@@ -28,14 +28,13 @@ public class RetailManagerControllerTest extends BaseControllerTest {
 
 	@Test
 	public void testGetShops() throws Exception {
-
 		MvcResult result = mvc.perform(MockMvcRequestBuilders.get(uri).param("customerLongitude", "432")
 				.param("customerLatitude", "941").accept(MediaType.APPLICATION_JSON)).andReturn();
 
 		String content = result.getResponse().getContentAsString();
 		int status = result.getResponse().getStatus();
 
-		// Assert.assertEquals("failure - expected HTTP status", 200, status);
+		Assert.assertEquals("failure - expected HTTP status", 200, status);
 		Assert.assertTrue("failure - expected HTTP response body to have a value", content.trim().length() > 0);
 
 	}
@@ -52,8 +51,7 @@ public class RetailManagerControllerTest extends BaseControllerTest {
 		String content = result.getResponse().getContentAsString();
 		int status = result.getResponse().getStatus();
 
-		// Assert.assertEquals("failure - expected HTTP status 404", 404,
-		// status);
+		Assert.assertEquals("failure - expected HTTP status 204", 204, status);
 		Assert.assertTrue("failure - expected HTTP response body to be empty", content.trim().length() == 0);
 
 	}
