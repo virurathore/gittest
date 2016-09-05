@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.4.1" timestamp="2016-09-05T15:32:55.795">
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\IRetailManagerController.java">
+<violation beginline="19" endline="19" begincolumn="10" endcolumn="85" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.api" class="IRetailManagerController" method="addShop" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="22" endline="24" begincolumn="10" endcolumn="64" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.api" class="IRetailManagerController" method="getShops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\RetailsManagerController.java">
+<violation beginline="22" endline="85" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.api" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="25" endline="25" begincolumn="27" endcolumn="39" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.retailmanager.api" class="RetailsManagerController" variable="retailManager" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="34" endline="34" begincolumn="48" endcolumn="83" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="addShop" variable="shopRequest" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopRequest' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="5" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="addShop" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopInfo' could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="addShop" variable="shops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shops' could be declared final
+</violation>
+<violation beginline="48" endline="61" begincolumn="9" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'shopInfo' (lines '48'-'61').
+</violation>
+<violation beginline="48" endline="48" begincolumn="61" endcolumn="83" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" variable="customerLongitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'customerLongitude' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="7" endcolumn="28" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" variable="customerLatitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'customerLatitude' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="5" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopGeoInfo' could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="5" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" variable="shops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shops' could be declared final
+</violation>
+<violation beginline="57" endline="57" begincolumn="12" endcolumn="28" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopInfo' could be declared final
+</violation>
+<violation beginline="59" endline="59" begincolumn="23" endcolumn="52" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="64" endline="68" begincolumn="5" endcolumn="5" rule="ConfusingTernary" ruleset="Design" package="org.retailmanager.api" class="RetailsManagerController" method="getShops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="76" endline="76" begincolumn="34" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="mapShops" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopInfo' is not assigned and could be declared final
+</violation>
+<violation beginline="77" endline="77" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api" class="RetailsManagerController" method="mapShops" variable="shop" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shop' could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\error\GlobalExceptionHandler.java">
+<violation beginline="19" endline="30" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.api.error" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="24" endline="24" begincolumn="33" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.error" class="GlobalExceptionHandler" method="handleException" variable="exception" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'exception' is not assigned and could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="5" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="org.retailmanager.api.error" class="GlobalExceptionHandler" method="handleException" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\request\ShopRequest.java">
+<violation beginline="5" endline="27" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.api.request" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="14" endline="14" begincolumn="27" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.request" class="ShopRequest" method="setShopName" variable="shopName" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopName' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="30" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.request" class="ShopRequest" method="setShopAddress" variable="shopAddress" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopAddress' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="23" endcolumn="24" rule="UncommentedEmptyMethodBody" ruleset="Design" package="org.retailmanager.api.request" class="ShopRequest" method="print" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UncommentedEmptyMethodBody" priority="3">
+Document empty method body
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\response\ShopsResponse.java">
+<violation beginline="5" endline="66" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.api.response" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.retailmanager.api.response" class="ShopsResponse" variable="shopName" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="21" endline="21" begincolumn="28" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.response" class="ShopsResponse" method="setShopsName" variable="shopsName" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopsName' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="30" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.response" class="ShopsResponse" method="setShopAddress" variable="shopAddress" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopAddress' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="32" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.response" class="ShopsResponse" method="setShopLongitude" variable="shopLongitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopLongitude' is not assigned and could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="31" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.api.response" class="ShopsResponse" method="setShopLatitude" variable="shopLatitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopLatitude' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\geocode\restclient\GoogleGeoCodeClient.java">
+<violation beginline="30" endline="102" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.geocode.restclient" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="34" endline="35" begincolumn="3" endcolumn="22" rule="DefaultPackage" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="35" endline="35" begincolumn="13" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" variable="googleKey" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="38" endline="56" begincolumn="11" endcolumn="97" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="address" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'address' (lines '38'-'56').
+</violation>
+<violation beginline="38" endline="55" begincolumn="41" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="result" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'result' (lines '38'-'55').
+</violation>
+<violation beginline="38" endline="59" begincolumn="17" endcolumn="79" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="type" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'type' (lines '38'-'59').
+</violation>
+<violation beginline="38" endline="38" begincolumn="37" endcolumn="59" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="shopRequest" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopRequest' is not assigned and could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="5" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="shopAddress" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopAddress' could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="5" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="context" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'context' could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="7" endcolumn="85" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="filters" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'filters' could be declared final
+</violation>
+<violation beginline="44" endline="46" begincolumn="7" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="geocodingApiRequest" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'geocodingApiRequest' could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="7" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="results" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'results' could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="12" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="result" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'result' could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="14" endcolumn="37" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="address" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'address' could be declared final
+</violation>
+<violation beginline="58" endline="58" begincolumn="16" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="type" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'type' could be declared final
+</violation>
+<violation beginline="61" endline="61" begincolumn="41" endcolumn="57" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="61" endline="61" begincolumn="15" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopGeoInfo' could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="14" endcolumn="22" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getShopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="76" endline="88" begincolumn="44" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="addressComponet" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'addressComponet' (lines '76'-'88').
+</violation>
+<violation beginline="76" endline="86" begincolumn="9" endcolumn="53" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="geocodingResult" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'geocodingResult' (lines '76'-'86').
+</violation>
+<violation beginline="76" endline="89" begincolumn="17" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="type" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'type' (lines '76'-'89').
+</violation>
+<violation beginline="76" endline="76" begincolumn="31" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopGeoInfo' is not assigned and could be declared final
+</violation>
+<violation beginline="78" endline="78" begincolumn="5" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="context" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'context' could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="7" endcolumn="97" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="location" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'location' could be declared final
+</violation>
+<violation beginline="81" endline="81" begincolumn="7" endcolumn="97" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="geocodingResults" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'geocodingResults' could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="12" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="geocodingResult" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'geocodingResult' could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="14" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="addressComponet" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'addressComponet' could be declared final
+</violation>
+<violation beginline="88" endline="88" begincolumn="16" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" variable="type" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'type' could be declared final
+</violation>
+<violation beginline="95" endline="95" begincolumn="14" endcolumn="22" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="org.retailmanager.geocode.restclient" class="GoogleGeoCodeClient" method="getPostalCode" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\geocode\restclient\GoogleKey.java">
+<violation beginline="15" endline="28" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.geocode.restclient" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="16" endline="16" begincolumn="25" endcolumn="88" rule="LoggerIsNotStaticFinal" ruleset="Java Logging" package="org.retailmanager.geocode.restclient" class="GoogleKey" variable="logger" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/logging-java.html#LoggerIsNotStaticFinal" priority="2">
+The Logger variable declaration does not contain the static and final modifiers
+</violation>
+<violation beginline="17" endline="17" begincolumn="3" endcolumn="13" rule="DefaultPackage" ruleset="Controversial" package="org.retailmanager.geocode.restclient" class="GoogleKey" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="24" endline="24" begincolumn="22" endcolumn="31" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.geocode.restclient" class="GoogleKey" method="setKey" variable="key" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'key' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\geocode\restclient\IGoogleGeoCodeClient.java">
+<violation beginline="17" endline="17" begincolumn="10" endcolumn="61" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.geocode.restclient" class="IGoogleGeoCodeClient" method="getShopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="23" endline="23" begincolumn="10" endcolumn="55" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.geocode.restclient" class="IGoogleGeoCodeClient" method="getPostalCode" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\init\Application.java">
+<violation beginline="12" endline="17" begincolumn="26" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="org.retailmanager.init" class="Application" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="39" rule="UseVarargs" ruleset="Design" package="org.retailmanager.init" class="Application" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.init" class="Application" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\bs\IRetailsManager.java">
+<violation beginline="11" endline="11" begincolumn="10" endcolumn="51" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.rest.bs" class="IRetailsManager" method="addShop" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="13" endline="13" begincolumn="10" endcolumn="58" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.rest.bs" class="IRetailsManager" method="getShops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\bs\RetailManagerService.java">
+<violation beginline="17" endline="49" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.rest.bs" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="21" endline="21" begincolumn="28" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.retailmanager.rest.bs" class="RetailManagerService" variable="shopsRepository" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="24" begincolumn="3" endcolumn="43" rule="DefaultPackage" ruleset="Controversial" package="org.retailmanager.rest.bs" class="RetailManagerService" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="24" endline="24" begincolumn="24" endcolumn="42" rule="BeanMembersShouldSerialize" ruleset="JavaBeans" package="org.retailmanager.rest.bs" class="RetailManagerService" variable="googleGeoCodeClient" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/javabeans.html#BeanMembersShouldSerialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="27" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.bs" class="RetailManagerService" method="addShop" variable="shopRequest" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopRequest' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="5" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.bs" class="RetailManagerService" method="addShop" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopGeoInfo' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="34" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.bs" class="RetailManagerService" method="getShops" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopGeoInfo' is not assigned and could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="5" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.bs" class="RetailManagerService" method="getShops" variable="postalCode" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'postalCode' could be declared final
+</violation>
+<violation beginline="45" endline="45" begincolumn="5" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.bs" class="RetailManagerService" method="getShops" variable="shopsInfoList" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopsInfoList' could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="5" endcolumn="25" rule="UnnecessaryLocalBeforeReturn" ruleset="Design" package="org.retailmanager.rest.bs" class="RetailManagerService" method="getShops" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#UnnecessaryLocalBeforeReturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'shopsInfoList'
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\ShopAddress.java">
+<violation beginline="3" endline="27" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.rest.modal" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopAddress" method="setNumber" variable="number" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'number' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="27" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopAddress" method="setPostCode" variable="postCode" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'postCode' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\ShopGeoInfo.java">
+<violation beginline="3" endline="41" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.rest.modal" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="17" endline="17" begincolumn="32" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopGeoInfo" method="setShopLongitude" variable="shopLongitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopLongitude' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="31" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopGeoInfo" method="setShopLatitude" variable="lat" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'lat' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\ShopInfo.java">
+<violation beginline="5" endline="67" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.rest.modal" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="21" endline="21" begincolumn="21" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopInfo" method="setId" variable="id" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'id' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="27" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopInfo" method="setShopName" variable="shopName" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopName' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="30" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopInfo" method="setShopAddress" variable="shopAddress" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopAddress' is not assigned and could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="30" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="ShopInfo" method="setShopGeoInfo" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopGeoInfo' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\StoreGeoCode.java">
+<violation beginline="3" endline="23" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.rest.modal" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="11" endline="11" begincolumn="28" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="StoreGeoCode" method="setLattitude" variable="lattitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'lattitude' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="28" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.modal" class="StoreGeoCode" method="setLangitude" variable="langitude" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'langitude' is not assigned and could be declared final
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\repository\IShopsRepository.java">
+<violation beginline="21" endline="21" begincolumn="10" endcolumn="42" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.rest.repository" class="IShopsRepository" method="save" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="27" endline="27" begincolumn="10" endcolumn="51" rule="UnusedModifier" ruleset="Unused Code" package="org.retailmanager.rest.repository" class="IShopsRepository" method="findAll" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\repository\ShopsRepository.java">
+<violation beginline="33" endline="33" begincolumn="5" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopInfo' could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="5" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" variable="shopAddress" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopAddress' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="5" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" variable="shopGeoInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopGeoInfo' could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="40" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" method="saveShopInfo" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopInfo' is not assigned and could be declared final
+</violation>
+<violation beginline="47" endline="50" begincolumn="5" endcolumn="5" rule="NonThreadSafeSingleton" ruleset="Design" package="org.retailmanager.rest.repository" class="ShopsRepository" method="saveShopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/design.html#NonThreadSafeSingleton" priority="3">
+Singleton is not thread safe
+</violation>
+<violation beginline="59" endline="59" begincolumn="24" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" method="save" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'shopInfo' is not assigned and could be declared final
+</violation>
+<violation beginline="65" endline="73" begincolumn="19" endcolumn="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="org.retailmanager.rest.repository" class="ShopsRepository" method="findAll" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'shopInfo' (lines '65'-'73').
+</violation>
+<violation beginline="65" endline="65" begincolumn="33" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" method="findAll" variable="postalCode" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'postalCode' is not assigned and could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="10" endcolumn="26" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" method="findAll" variable="shopInfo" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopInfo' could be declared final
+</violation>
+<violation beginline="73" endline="73" begincolumn="7" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" method="findAll" variable="shopAddress" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'shopAddress' could be declared final
+</violation>
+<violation beginline="76" endline="76" begincolumn="22" endcolumn="46" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="org.retailmanager.rest.repository" class="ShopsRepository" method="findAll" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+</file>
+</pmd>

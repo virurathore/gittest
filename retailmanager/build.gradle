@@ -15,7 +15,6 @@ buildscript {
     }
 }
 
-
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
@@ -66,7 +65,7 @@ dependencyManagement {
 
 checkstyle {
   toolVersion = checkstyleVersion
-  config = rootProject.resources.text.fromFile('etc/checkstyle/rules.xml')
+  config = rootProject.resources.text.fromFile('etc/checkstyle/google_checks.xml')
 }
 
 pmd {

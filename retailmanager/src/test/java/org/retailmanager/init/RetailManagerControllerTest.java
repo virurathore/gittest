@@ -2,84 +2,87 @@ package org.retailmanager.init;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.retailmanager.api.request.ShopRequestVO;
-import org.retailmanager.api.response.ShopsResponseVO;
+import org.retailmanager.api.request.ShopRequest;
+import org.retailmanager.api.response.ShopsResponse;
 import org.retailmanager.rest.modal.ShopAddress;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-public class RetailManagerControllerTest extends BaseControllerTest {
-	// To check context loading or not
-	@Ignore
-	@Test
-	public void contextLoads() {
-		System.out.println("Conext loaded");
-	}
+public class RetailManagerControllerTest extends BaseTestController {
+  private static final String API_URI = "/api/shops";
 
-	@Before
-	public void setUp() {
-		super.setUp();
-	}
+  @Before
+  public void setUp() {
+    super.setUp();
+  }
 
-	private static final String uri = "/api/shops";
 
-	@Test
-	public void testGetShops() throws Exception {
-		MvcResult result = mvc.perform(MockMvcRequestBuilders.get(uri).param("customerLongitude", "432")
-				.param("customerLatitude", "941").accept(MediaType.APPLICATION_JSON)).andReturn();
 
-		String content = result.getResponse().getContentAsString();
-		int status = result.getResponse().getStatus();
+  @Test
+  public void testGetShopsNotFound() throws Exception {
 
-		Assert.assertEquals("failure - expected HTTP status", 200, status);
-		Assert.assertTrue("failure - expected HTTP response body to have a value", content.trim().length() > 0);
+    Long lng = Long.MAX_VALUE;
+    Long ltd = Long.MAX_VALUE;
 
-	}
+    MvcResult result = mvc
+        .perform(MockMvcRequestBuilders.get(API_URI).param("customerLongitude", Long.toString(lng))
+            .param("customerLatitude", Long.toString(ltd)).accept(MediaType.APPLICATION_JSON))
+        .andReturn();
 
-	@Test
-	public void testGetShopsNotFound() throws Exception {
+    String content = result.getResponse().getContentAsString();
+    int status = result.getResponse().getStatus();
 
-		Long lng = Long.MAX_VALUE;
-		Long ltd = Long.MAX_VALUE;
+    Assert.assertEquals("failure - expected HTTP status 204", 204, status);
+    Assert.assertTrue("failure - expected HTTP response body to be empty", isEmptyString(content));
 
-		MvcResult result = mvc.perform(MockMvcRequestBuilders.get(uri).param("customerLongitude", Long.toString(lng))
-				.param("customerLatitude", Long.toString(ltd)).accept(MediaType.APPLICATION_JSON)).andReturn();
+  }
 
-		String content = result.getResponse().getContentAsString();
-		int status = result.getResponse().getStatus();
+  @Test
+  public void testCreateShops() throws Exception {
 
-		Assert.assertEquals("failure - expected HTTP status 204", 204, status);
-		Assert.assertTrue("failure - expected HTTP response body to be empty", content.trim().length() == 0);
+    ShopRequest shopRequest = new ShopRequest();
+    shopRequest.setShopName("ags cinema");
+    ShopAddress shopAddress = new ShopAddress();
+    shopAddress.setNumber(1600);
+    shopAddress.setPostCode("603103");
+    shopRequest.setShopAddress(shopAddress);
+    String inputJson = mapToJson(shopRequest);
 
-	}
+    MvcResult result =
+        mvc.perform(MockMvcRequestBuilders.post(API_URI).contentType(MediaType.APPLICATION_JSON)
+            .accept(MediaType.APPLICATION_JSON).content(inputJson)).andReturn();
 
-	@Test
-	public void testCreateShops() throws Exception {
+    String content = result.getResponse().getContentAsString();
+    int status = result.getResponse().getStatus();
 
-		ShopRequestVO shopRequestVO = new ShopRequestVO();
-		shopRequestVO.setShopName("testShop111");
-		ShopAddress shopAddress = new ShopAddress();
-		shopAddress.setNumber(3456);
-		shopAddress.setPostCode("124577");
-		shopRequestVO.setShopAddress(shopAddress);
-		String inputJson = mapToJson(shopRequestVO);
+    Assert.assertEquals("failure - expected HTTP status 201", 201, status);
+    Assert.assertTrue("failure - expected HTTP response body to have avalue",
+        !isEmptyString(content));
 
-		MvcResult result = mvc.perform(MockMvcRequestBuilders.post(uri).contentType(MediaType.APPLICATION_JSON)
-				.accept(MediaType.APPLICATION_JSON).content(inputJson)).andReturn();
+    ShopsResponse shopsResponse = super.mapFromJson(content, ShopsResponse.class);
 
-		String content = result.getResponse().getContentAsString();
-		int status = result.getResponse().getStatus();
+    Assert.assertNotNull("failure - expected shops not null", shopsResponse);
+    Assert.assertEquals("failure - expected shopname match", "ags cinema",
+        shopsResponse.getShopsName());
 
-		Assert.assertEquals("failure - expected HTTP status 201", 201, status);
-		Assert.assertTrue("failure - expected HTTP response body to have avalue", content.trim().length() > 0);
+  }
 
-		ShopsResponseVO shopsResponseVO = super.mapFromJson(content, ShopsResponseVO.class);
+  @Test
+  public void testGetShops() throws Exception {
+    MvcResult result = mvc
+        .perform(MockMvcRequestBuilders.get(API_URI).param("customerLongitude", "80.1986649")
+            .param("customerLatitude", "12.7949478").accept(MediaType.APPLICATION_JSON))
+        .andReturn();
 
-		Assert.assertNotNull("failure - expected shops not null", shopsResponseVO);
-		Assert.assertEquals("failure - expected shopname match", "testShop111", shopsResponseVO.getShopsName());
+    String content = result.getResponse().getContentAsString();
+    int status = result.getResponse().getStatus();
 
-	}
+    Assert.assertEquals("failure - expected HTTP status", 200, status);
+    Assert.assertTrue("failure - expected HTTP response body to have a value",
+        !isEmptyString(content));
+
+  }
+
 }

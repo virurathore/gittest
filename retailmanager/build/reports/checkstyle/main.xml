@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.16.1">
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\IRetailManagerController.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\RetailsManagerController.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\error\GlobalExceptionHandler.java">
+<error line="22" column="3" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\request\ShopRequest.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\api\response\ShopsResponse.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\geocode\restclient\GoogleGeoCodeClient.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\geocode\restclient\GoogleKey.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\geocode\restclient\IGoogleGeoCodeClient.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\init\Application.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\bs\IRetailsManager.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\bs\RetailManagerService.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\ShopAddress.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\ShopGeoInfo.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\ShopInfo.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\modal\StoreGeoCode.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\repository\IShopsRepository.java">
+</file>
+<file name="C:\Viru\Personal\gittest\retailmanager\src\main\java\org\retailmanager\rest\repository\ShopsRepository.java">
+</file>
+</checkstyle>

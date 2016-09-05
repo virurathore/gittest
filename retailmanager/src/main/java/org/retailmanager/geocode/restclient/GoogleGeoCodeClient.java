@@ -1,93 +1,102 @@
 package org.retailmanager.geocode.restclient;
 
-import org.retailmanager.rest.bs.RetailManagerService;
+import com.google.maps.GeoApiContext;
+import com.google.maps.GeocodingApi;
+import com.google.maps.GeocodingApiRequest;
+import com.google.maps.model.AddressComponent;
+import com.google.maps.model.AddressComponentType;
+import com.google.maps.model.ComponentFilter;
+import com.google.maps.model.GeocodingResult;
+import com.google.maps.model.LatLng;
+
+import org.retailmanager.api.request.ShopRequest;
 import org.retailmanager.rest.modal.ShopAddress;
 import org.retailmanager.rest.modal.ShopGeoInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.google.maps.GeoApiContext;
-import com.google.maps.GeocodingApi;
-import com.google.maps.model.AddressComponent;
-import com.google.maps.model.AddressComponentType;
-import com.google.maps.model.GeocodingResult;
-import com.google.maps.model.LatLng;
+
 
 /**
- * @author Viru
+ * @author Viru.
  *
- * This can use WebTarget approach to access rest service, but as we have client library exposed, 
- * it will help to get response POJO, if we use WebTarget, we need to define and map POJO based on response json string.
+ *         This can use WebTarget approach to access rest service, but as we have client library
+ *         exposed, it will help to get response POJO, if we use WebTarget, we need to define and
+ *         map POJO based on response json string.
  */
-@Component 
+@Component
 public class GoogleGeoCodeClient implements IGoogleGeoCodeClient {
-	
-	private Logger logger = LoggerFactory.getLogger(GoogleGeoCodeClient.class);
 
-	/* (non-Javadoc)
-	 * @see org.retailmanager.geocode.restclient.IGoogleGeoCodeClient#getShopGeoInfo(org.retailmanager.rest.modal.ShopAddress)
-	 * Unable to get google API Key because of some issues. 
-	 * Now dividing postal code in 2 parts and building the latitude and longitude 
-	 * Sorry it's alphanumeric so converting require special care(algorithm).
-	 * for time crunch assuming that user always pass numeric postal code and size > 4 digits.
-	 */
-	@Override
-	public ShopGeoInfo getShopGeoInfo(ShopAddress shopAddress) {
-		// Replace the API key below with a valid API key.
-//		GeoApiContext context = new GeoApiContext().setApiKey("YOUR_API_KEY");
-		GeocodingResult[] results=null;
-		try {
-//			results = GeocodingApi.geocode(context,
-//			    "1600 Amphitheatre Parkway Mountain View, CA 94043").await();
-//			System.out.println(results[0].formattedAddress);		
-			String postCode = shopAddress.getPostCode();
-			String lat = postCode.substring(0,postCode.length()/2);
-			String lng = postCode.substring((postCode.length()/2));
-			
-			ShopGeoInfo shopGeoInfo = new ShopGeoInfo();
-			shopGeoInfo.setShopLatitude(Double.parseDouble(lat));
-			shopGeoInfo.setShopLongitude(Double.parseDouble(lng));
-//			shopGeoInfo.setShopLatitude(results[0].geometry.location.lat);
-//			shopGeoInfo.setShopLongitude(results[0].geometry.location.lng);
-			logger.info(shopAddress.toString());
-			logger.info(shopGeoInfo.toString());
-			return shopGeoInfo;
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
-	}
+  private static final Logger logger = LoggerFactory.getLogger(GoogleGeoCodeClient.class);
 
-	@Override
-	public String getPostalCode(ShopGeoInfo shopGeoInfo) {
-		// Replace the API key below with a valid API key.
-//		GeoApiContext context = new GeoApiContext().setApiKey("YOUR_API_KEY");
-		GeocodingResult[] geocodingResults=null;
-		try {
-//			LatLng location = new LatLng(shopGeoInfo.getShopLatitude(), shopGeoInfo.getShopLongitude());
-//			geocodingResults = GeocodingApi.reverseGeocode(context, location).await();
-//			System.out.println(geocodingResults[0].formattedAddress);
-//			for(AddressComponent addressComponet :geocodingResults[0].addressComponents){
-//				for(AddressComponentType type:addressComponet.types){
-//					if(type ==AddressComponentType.POSTAL_CODE){
-//						return addressComponet.longName;
-//					}
-//				}
-//			}
-//			logger.info(shopAddress.toString());
-			logger.info(shopGeoInfo.toString());
-			String postCode  = Integer.toString((int)shopGeoInfo.getShopLatitude()) + Integer.toString((int)shopGeoInfo.getShopLongitude());
-			logger.info("postCode : "+postCode);
-			return postCode; 
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-				
-		return null;
-	}
+  @Autowired
+  GoogleKey googleKey;
+
+  @Override
+  public ShopGeoInfo getShopGeoInfo(ShopRequest shopRequest) {
+    ShopAddress shopAddress = shopRequest.getShopAddress();
+    logger.info("google key is :" + googleKey.getKey());
+    GeoApiContext context = new GeoApiContext().setApiKey(googleKey.getKey());
+    try {
+      ComponentFilter filters = ComponentFilter.postalCode(shopAddress.getPostCode());
+      GeocodingApiRequest geocodingApiRequest = GeocodingApi.newRequest(context)
+          .address(Integer.toString(shopAddress.getNumber()) + " " + shopRequest.getShopName())
+          .components(filters);
+      GeocodingResult[] results = geocodingApiRequest.await();
+
+      if (results.length <= 0) {
+        logger.error("google api error : not recieved the result");
+        return null;
+      }
+
+      for (GeocodingResult result : results) {
+        for (AddressComponent address : result.addressComponents) {
+          logger.info(
+              "address compoenent :" + address.longName + "\t type :" + address.types.toString());
+          for (AddressComponentType type : address.types) {
+            if (type == AddressComponentType.POSTAL_CODE
+                && address.longName.equalsIgnoreCase(shopAddress.getPostCode())) {
+              ShopGeoInfo shopGeoInfo = new ShopGeoInfo();
+              shopGeoInfo.setShopLatitude(result.geometry.location.lat);
+              shopGeoInfo.setShopLongitude(result.geometry.location.lng);
+              return shopGeoInfo;
+            }
+          }
+        }
+      }
+    } catch (Exception exception) {
+      logger.error("google api excpetion : " + exception.getMessage());
+    }
+    return null;
+  }
+
+  @Override
+  public String getPostalCode(ShopGeoInfo shopGeoInfo) {
+    // Replace the API key below with a valid API key.
+    GeoApiContext context = new GeoApiContext().setApiKey(googleKey.getKey());
+    try {
+      LatLng location = new LatLng(shopGeoInfo.getShopLatitude(), shopGeoInfo.getShopLongitude());
+      GeocodingResult[] geocodingResults = GeocodingApi.reverseGeocode(context, location).await();
+      if (geocodingResults == null || geocodingResults.length < 1) {
+        return null;
+      }
+      for (GeocodingResult geocodingResult : geocodingResults) {
+        logger.info(geocodingResult.formattedAddress);
+        for (AddressComponent addressComponet : geocodingResult.addressComponents) {
+          for (AddressComponentType type : addressComponet.types) {
+            if (type == AddressComponentType.POSTAL_CODE) {
+              return addressComponet.longName;
+            }
+          }
+        }
+      }
+    } catch (Exception exception) {
+      logger.error("google api excpetion : " + exception.getMessage());
+    }
+
+    return null;
+  }
 
 }

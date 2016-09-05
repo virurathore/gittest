@@ -1,0 +1,330 @@
+src/main/java/org/retailmanager/api/IRetailManagerController.java:16:	headerCommentRequirement Required
+src/main/java/org/retailmanager/api/IRetailManagerController.java:19:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/api/IRetailManagerController.java:19:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/IRetailManagerController.java:22:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/api/IRetailManagerController.java:22:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/RetailsManagerController.java:22:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/api/RetailsManagerController.java:22:	headerCommentRequirement Required
+src/main/java/org/retailmanager/api/RetailsManagerController.java:23:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/org/retailmanager/api/RetailsManagerController.java:23:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/RetailsManagerController.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/org/retailmanager/api/RetailsManagerController.java:25:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/RetailsManagerController.java:34:	Parameter 'shopRequest' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:34:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/RetailsManagerController.java:35:	There is log block not surrounded by if
+src/main/java/org/retailmanager/api/RetailsManagerController.java:37:	Local variable 'shopInfo' could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:38:	Local variable 'shops' could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:45:	Comment is too large: Line too long
+src/main/java/org/retailmanager/api/RetailsManagerController.java:48:	Found 'UR'-anomaly for variable 'shopInfo' (lines '48'-'61').
+src/main/java/org/retailmanager/api/RetailsManagerController.java:48:	Parameter 'customerLongitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:48:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/RetailsManagerController.java:49:	Parameter 'customerLatitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:51:	Local variable 'shopGeoInfo' could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:54:	Local variable 'shops' could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:57:	Local variable 'shopInfo' could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:59:	Avoid instantiating new objects inside loops
+src/main/java/org/retailmanager/api/RetailsManagerController.java:64:	Avoid if (x != y) ..; else ..;
+src/main/java/org/retailmanager/api/RetailsManagerController.java:65:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/org/retailmanager/api/RetailsManagerController.java:73:	Comment is too large: Line too long
+src/main/java/org/retailmanager/api/RetailsManagerController.java:74:	Comment is too large: Line too long
+src/main/java/org/retailmanager/api/RetailsManagerController.java:76:	Parameter 'shopInfo' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:77:	Local variable 'shop' could be declared final
+src/main/java/org/retailmanager/api/RetailsManagerController.java:80:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/api/RetailsManagerController.java:80:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/api/RetailsManagerController.java:81:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/api/RetailsManagerController.java:81:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:19:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:20:	Private field 'logger' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:20:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:20:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:24:	Parameter 'exception' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:24:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:25:	Avoid printStackTrace(); use a logger call instead.
+src/main/java/org/retailmanager/api/error/GlobalExceptionHandler.java:26:	There is log block not surrounded by if
+src/main/java/org/retailmanager/api/request/ShopRequest.java:5:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/api/request/ShopRequest.java:5:	headerCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:6:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:8:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:10:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:14:	Parameter 'shopName' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/request/ShopRequest.java:14:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:18:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:22:	Parameter 'shopAddress' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/request/ShopRequest.java:22:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/request/ShopRequest.java:26:	Document empty method body
+src/main/java/org/retailmanager/api/request/ShopRequest.java:26:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:5:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:5:	headerCommentRequirement Required
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:6:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:6:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:7:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:8:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:9:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:21:	Parameter 'shopsName' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:35:	Parameter 'shopAddress' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:49:	Parameter 'shopLongitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/api/response/ShopsResponse.java:63:	Parameter 'shopLatitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:25:	Comment is too large: Line too long
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:26:	Comment is too large: Line too long
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:30:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:32:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:32:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:34:	Use explicit scoping instead of the default package private level
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:35:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:35:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:38:	Found 'UR'-anomaly for variable 'address' (lines '38'-'56').
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:38:	Found 'UR'-anomaly for variable 'result' (lines '38'-'55').
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:38:	Found 'UR'-anomaly for variable 'type' (lines '38'-'59').
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:38:	Parameter 'shopRequest' is not assigned and could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:38:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:39:	Local variable 'shopAddress' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:40:	There is log block not surrounded by if
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:41:	Local variable 'context' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:43:	Local variable 'filters' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:44:	Avoid excessively long variable names like geocodingApiRequest
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:44:	Local variable 'geocodingApiRequest' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:47:	Local variable 'results' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:51:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:54:	Local variable 'result' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:55:	Local variable 'address' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:56:	There is log block not surrounded by if
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:57:	Potential violation of Law of Demeter (static property access)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:58:	Local variable 'type' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:60:	Potential violation of Law of Demeter (static property access)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:61:	Avoid instantiating new objects inside loops
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:61:	Local variable 'shopGeoInfo' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:64:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:69:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:70:	There is log block not surrounded by if
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:76:	Found 'UR'-anomaly for variable 'addressComponet' (lines '76'-'86').
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:76:	Found 'UR'-anomaly for variable 'geocodingResult' (lines '76'-'84').
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:76:	Found 'UR'-anomaly for variable 'type' (lines '76'-'87').
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:76:	Parameter 'shopGeoInfo' is not assigned and could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:76:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:78:	Local variable 'context' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:80:	Local variable 'location' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:81:	Local variable 'geocodingResults' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:81:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:83:	Local variable 'geocodingResult' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:84:	System.out.println is used
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:85:	Local variable 'addressComponet' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:86:	Local variable 'type' could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:88:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:94:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/java/org/retailmanager/geocode/restclient/GoogleGeoCodeClient.java:95:	There is log block not surrounded by if
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:15:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:16:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:16:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:17:	Use explicit scoping instead of the default package private level
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:17:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:19:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:20:	There is log block not surrounded by if
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:24:	Parameter 'key' is not assigned and could be declared final
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:24:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/geocode/restclient/GoogleKey.java:25:	There is log block not surrounded by if
+src/main/java/org/retailmanager/geocode/restclient/IGoogleGeoCodeClient.java:9:	Comment is too large: Line too long
+src/main/java/org/retailmanager/geocode/restclient/IGoogleGeoCodeClient.java:17:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/geocode/restclient/IGoogleGeoCodeClient.java:23:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/init/Application.java:12:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/org/retailmanager/init/Application.java:13:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/org/retailmanager/init/Application.java:13:	Parameter 'args' is not assigned and could be declared final
+src/main/java/org/retailmanager/init/Application.java:13:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/IRetailsManager.java:10:	headerCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/IRetailsManager.java:11:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/rest/bs/IRetailsManager.java:11:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/IRetailsManager.java:13:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/rest/bs/IRetailsManager.java:13:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:17:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:17:	headerCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:18:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:18:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:21:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:23:	Use explicit scoping instead of the default package private level
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:24:	Avoid excessively long variable names like googleGeoCodeClient
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:24:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:27:	Parameter 'shopRequest' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:27:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:29:	Local variable 'shopGeoInfo' could be declared final
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:39:	Parameter 'shopGeoInfo' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:39:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:41:	Local variable 'postalCode' could be declared final
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:42:	Avoid using if statements without curly braces
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:43:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:44:	Local variable 'shopsInfoList' could be declared final
+src/main/java/org/retailmanager/rest/bs/RetailManagerService.java:45:	Consider simply returning the value vs storing it in local variable 'shopsInfoList'
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:3:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:3:	headerCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:4:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:5:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:7:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:11:	Parameter 'number' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:11:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:15:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:19:	Parameter 'postCode' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:19:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopAddress.java:24:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:3:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:3:	headerCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:4:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:5:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:17:	Parameter 'shopLongitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:31:	Parameter 'lat' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopGeoInfo.java:36:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:5:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:5:	headerCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:6:	Avoid variables with short names like id
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:6:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:7:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:8:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:9:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:21:	Avoid variables with short names like id
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:21:	Parameter 'id' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:35:	Parameter 'shopName' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:49:	Parameter 'shopAddress' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/ShopInfo.java:63:	Parameter 'shopGeoInfo' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:3:	Each class should declare at least one constructor
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:3:	headerCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:4:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:5:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:7:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:11:	Parameter 'lattitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:11:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:15:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:19:	Parameter 'langitude' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/modal/StoreGeoCode.java:19:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/repository/IShopsRepository.java:21:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/rest/repository/IShopsRepository.java:27:	Avoid modifiers which are implied by the context
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:20:	Comment is too large: Line too long
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:28:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:29:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:30:	The Logger variable declaration does not contain the static and final modifiers
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:30:	fieldCommentRequirement Required
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:33:	Local variable 'shopInfo' could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:35:	Local variable 'shopAddress' could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:39:	Local variable 'shopGeoInfo' could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:46:	Parameter 'shopInfo' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:47:	Singleton is not thread safe
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:59:	Parameter 'shopInfo' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:59:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:65:	Found 'UR'-anomaly for variable 'shopInfo' (lines '65'-'70').
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:65:	Parameter 'postalCode' is not assigned and could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:65:	publicMethodCommentRequirement Required
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:66:	There is log block not surrounded by if
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:69:	Local variable 'shopInfo' could be declared final
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:71:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:71:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:72:	Deeply nested if..then statements are hard to read
+src/main/java/org/retailmanager/rest/repository/ShopsRepository.java:73:	Avoid instantiating new objects inside loops
+src/test/java/org/retailmanager/init/BaseTest.java:11:	Abstract classes should be named AbstractXXX
+src/test/java/org/retailmanager/init/BaseTest.java:11:	Each class should declare at least one constructor
+src/test/java/org/retailmanager/init/BaseTest.java:11:	No abstract method which means that the keyword is most likely used to prevent instantiation. Use a private or protected constructor instead.
+src/test/java/org/retailmanager/init/BaseTest.java:11:	This abstract class does not have any abstract methods
+src/test/java/org/retailmanager/init/BaseTest.java:11:	headerCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTest.java:13:	The Logger variable declaration does not contain the static and final modifiers
+src/test/java/org/retailmanager/init/BaseTest.java:13:	fieldCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:21:	Abstract classes should be named AbstractXXX
+src/test/java/org/retailmanager/init/BaseTestController.java:21:	Each class should declare at least one constructor
+src/test/java/org/retailmanager/init/BaseTestController.java:21:	headerCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/org/retailmanager/init/BaseTestController.java:23:	fieldCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:26:	Avoid excessively long variable names like webApplicationContext
+src/test/java/org/retailmanager/init/BaseTestController.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/org/retailmanager/init/BaseTestController.java:26:	fieldCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:28:	JUnit 4 tests that set up tests should use the @Before annotation
+src/test/java/org/retailmanager/init/BaseTestController.java:28:	protectedMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/BaseTestController.java:32:	JUnit 4 tests that set up tests should use the @Before annotation
+src/test/java/org/retailmanager/init/BaseTestController.java:32:	Parameter 'controller' is not assigned and could be declared final
+src/test/java/org/retailmanager/init/BaseTestController.java:32:	protectedMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:33:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/BaseTestController.java:36:	Parameter 'obj' is not assigned and could be declared final
+src/test/java/org/retailmanager/init/BaseTestController.java:36:	protectedMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:37:	Local variable 'mapper' could be declared final
+src/test/java/org/retailmanager/init/BaseTestController.java:41:	Parameter 'clazz' is not assigned and could be declared final
+src/test/java/org/retailmanager/init/BaseTestController.java:41:	Parameter 'json' is not assigned and could be declared final
+src/test/java/org/retailmanager/init/BaseTestController.java:41:	protectedMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/BaseTestController.java:43:	Local variable 'mapper' could be declared final
+src/test/java/org/retailmanager/init/BaseTestController.java:48:	An empty method in an abstract class should be abstract instead
+src/test/java/org/retailmanager/init/BaseTestController.java:48:	Document empty method body
+src/test/java/org/retailmanager/init/BaseTestController.java:48:	publicMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:13:	Each class should declare at least one constructor
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:13:	headerCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:14:	Variables that are final and static should be all capitals, 'uri' is not all capitals.
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:14:	fieldCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:17:	publicMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:24:	publicMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:26:	Local variable 'lng' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:27:	Local variable 'ltd' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:29:	Local variable 'result' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:30:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:30:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:30:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:34:	Local variable 'content' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:34:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:35:	Local variable 'status' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:35:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:39:	String.trim().length()==0 is an inefficient way to validate an empty String.
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:44:	publicMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:46:	Local variable 'shopRequest' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:48:	Local variable 'shopAddress' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:52:	Local variable 'inputJson' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:54:	Local variable 'result' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:58:	Local variable 'content' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:58:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:59:	Local variable 'status' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:59:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:62:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:63:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:63:	String.trim().length()==0 is an inefficient way to validate an empty String.
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:65:	Local variable 'shopsResponse' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:69:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:74:	publicMethodCommentRequirement Required
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:75:	Local variable 'result' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:76:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:76:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:76:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:80:	Local variable 'content' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:80:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:81:	Local variable 'status' could be declared final
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:81:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/org/retailmanager/init/RetailManagerControllerTest.java:85:	String.trim().length()==0 is an inefficient way to validate an empty String.
