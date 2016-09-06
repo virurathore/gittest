@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.List;
 
 
@@ -43,6 +44,12 @@ public class RetailManagerService implements IRetailsManager {
       return null;
     }
     List<ShopInfo> shopsInfoList = shopsRepository.findAll(postalCode);
+    return shopsInfoList;
+  }
+
+  @Override
+  public Collection<ShopInfo> getAll() {
+    List<ShopInfo> shopsInfoList = shopsRepository.findAll(null);
     return shopsInfoList;
   }
 

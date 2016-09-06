@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.277s</div>
+<div class="counter">2.082s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">contextLoads</td>
-<td>0.010s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCreateShops</td>
-<td>0.162s</td>
+<td>0.203s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetShops</td>
-<td>1.055s</td>
+<td>1.800s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetShopsNotFound</td>
-<td>0.050s</td>
+<td>0.073s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,31 +102,31 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:52:19.785 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.795 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:52:19.795 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:52:19.805 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.retailmanager.init.RetailManagerControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
-15:52:19.835 [Test worker] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@5b89182e declaringClass = 'org.retailmanager.init.BaseTestController', classes = '{class org.retailmanager.init.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-15:52:19.835 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.retailmanager.init.BaseTestController]: class path resource [org/retailmanager/init/BaseTestController-context.xml] does not exist
-15:52:19.835 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.retailmanager.init.BaseTestController]: class path resource [org/retailmanager/init/BaseTestControllerContext.groovy] does not exist
-15:52:19.835 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.retailmanager.init.BaseTestController]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:52:19.835 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.845 [Test worker] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [org.retailmanager.init.RetailManagerControllerTest]: using defaults.
-15:52:19.845 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-15:52:19.855 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-15:52:19.855 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-15:52:19.865 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3ed89ad2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62d321df, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47e50e05, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25a682c6]
-15:52:19.865 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.865 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.865 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.865 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.875 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@51bbf839 testClass = RetailManagerControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4538826f testClass = RetailManagerControllerTest, locations = '{}', classes = '{class org.retailmanager.init.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-15:52:19.875 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.875 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.retailmanager.init.RetailManagerControllerTest]
-15:52:19.965 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-15:52:19.965 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-15:52:19.965 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-15:52:19.965 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+<pre>00:08:39.824 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.830 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+00:08:39.835 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+00:08:39.858 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.retailmanager.init.RetailManagerControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+00:08:39.889 [Test worker] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@5b89182e declaringClass = 'org.retailmanager.init.BaseTestController', classes = '{class org.retailmanager.init.Application}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+00:08:39.895 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.retailmanager.init.BaseTestController]: class path resource [org/retailmanager/init/BaseTestController-context.xml] does not exist
+00:08:39.895 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.retailmanager.init.BaseTestController]: class path resource [org/retailmanager/init/BaseTestControllerContext.groovy] does not exist
+00:08:39.895 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.retailmanager.init.BaseTestController]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:08:39.897 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.908 [Test worker] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [org.retailmanager.init.RetailManagerControllerTest]: using defaults.
+00:08:39.915 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+00:08:39.924 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+00:08:39.932 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+00:08:39.935 [Test worker] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3ed89ad2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62d321df, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47e50e05, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25a682c6]
+00:08:39.940 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.941 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.945 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.945 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.949 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@51bbf839 testClass = RetailManagerControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4538826f testClass = RetailManagerControllerTest, locations = '{}', classes = '{class org.retailmanager.init.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+00:08:39.952 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:39.952 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.retailmanager.init.RetailManagerControllerTest]
+00:08:40.045 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+00:08:40.046 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+00:08:40.046 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+00:08:40.048 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -136,52 +136,58 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.5.RELEASE)
 
-2016-09-05 15:52:20.277  INFO 6052 --- [    Test worker] o.r.init.RetailManagerControllerTest     : Starting RetailManagerControllerTest on L-MAA-00438839 with PID 6052 (C:\Viru\Personal\gittest\retailmanager\build\classes\test started by vpratap in C:\Viru\Personal\gittest\retailmanager)
-2016-09-05 15:52:20.277  INFO 6052 --- [    Test worker] o.r.init.RetailManagerControllerTest     : No active profile set, falling back to default profiles: default
-2016-09-05 15:52:20.369  INFO 6052 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4c9ab18e: startup date [Mon Sep 05 15:52:20 IST 2016]; root of context hierarchy
-2016-09-05 15:52:21.739  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :null
-2016-09-05 15:52:21.739  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : google key from properties :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
-2016-09-05 15:52:22.515  INFO 6052 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4c9ab18e: startup date [Mon Sep 05 15:52:20 IST 2016]; root of context hierarchy
-2016-09-05 15:52:22.627  INFO 6052 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/shops],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Collection&lt;org.retailmanager.api.response.ShopsResponse&gt;&gt; org.retailmanager.api.RetailsManagerController.getShops(java.lang.Float,java.lang.Float)
-2016-09-05 15:52:22.627  INFO 6052 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/shops],methods=[POST],consumes=[application/json],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.retailmanager.api.response.ShopsResponse&gt; org.retailmanager.api.RetailsManagerController.addShop(org.retailmanager.api.request.ShopRequest)
-2016-09-05 15:52:22.637  INFO 6052 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2016-09-05 15:52:22.637  INFO 6052 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2016-09-05 15:52:22.679  INFO 6052 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-09-05 15:52:22.679  INFO 6052 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-09-05 15:52:22.700  INFO 6052 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
-2016-09-05 15:52:22.720  INFO 6052 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-09-05 15:52:22.989  INFO 6052 --- [    Test worker] o.r.init.RetailManagerControllerTest     : Started RetailManagerControllerTest in 3.013 seconds (JVM running for 3.886)
-2016-09-05 15:52:23.017  INFO 6052 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2016-09-05 15:52:23.017  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2016-09-05 15:52:23.047  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 30 ms
-2016-09-05 15:52:23.097  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : getShops called
-2016-09-05 15:52:23.097  INFO 6052 --- [    Test worker] o.r.rest.bs.RetailManagerService         : getShops called
-2016-09-05 15:52:23.107  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
-2016-09-05 15:52:23.147  INFO 6052 --- [    Test worker] com.google.maps.OkHttpRequestHandler     : Request: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM&amp;latlng=12.79494762%2C80.19866180
-2016-09-05 15:52:23.994  INFO 6052 --- [    Test worker] o.r.g.restclient.GoogleGeoCodeClient     : Vandalur-Kelambakkam Rd, Egattur, Tamil Nadu 603103, India
-2016-09-05 15:52:23.994  INFO 6052 --- [    Test worker] o.r.rest.repository.ShopsRepository      : find all called : 603103
-2016-09-05 15:52:24.064  INFO 6052 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2016-09-05 15:52:24.064  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2016-09-05 15:52:24.064  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
-2016-09-05 15:52:24.114  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : addShop called : org.retailmanager.api.request.ShopRequest@64ed820b
-2016-09-05 15:52:24.114  INFO 6052 --- [    Test worker] o.r.rest.bs.RetailManagerService         : addShop called
-2016-09-05 15:52:24.114  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
-2016-09-05 15:52:24.114  INFO 6052 --- [    Test worker] o.r.g.restclient.GoogleGeoCodeClient     : google key is :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
-2016-09-05 15:52:24.114  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
-2016-09-05 15:52:24.114  INFO 6052 --- [    Test worker] com.google.maps.OkHttpRequestHandler     : Request: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM&amp;components=postal_code%3A603103&amp;address=1600+ags+cinema
-2016-09-05 15:52:24.226  INFO 6052 --- [    Test worker] o.r.g.restclient.GoogleGeoCodeClient     : address compoenent :603103	 type :[Lcom.google.maps.model.AddressComponentType;@59181969
-2016-09-05 15:52:24.226  INFO 6052 --- [    Test worker] o.r.rest.repository.ShopsRepository      : save called
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : getShops called
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] o.r.rest.bs.RetailManagerService         : getShops called
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
-2016-09-05 15:52:24.236  INFO 6052 --- [    Test worker] com.google.maps.OkHttpRequestHandler     : Request: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM&amp;latlng=9223372036854776000.00000000%2C9223372036854776000.00000000
-2016-09-05 15:52:24.286  INFO 6052 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
-2016-09-05 15:52:24.286  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2016-09-05 15:52:24.296  INFO 6052 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 10 ms
-2016-09-05 15:52:24.296  INFO 6052 --- [    Test worker] o.retailmanager.init.BaseTestController  : context loaded successfully
+2016-09-06 00:08:40.391  INFO 9196 --- [    Test worker] o.r.init.RetailManagerControllerTest     : Starting RetailManagerControllerTest on L-MAA-00438839 with PID 9196 (C:\Viru\Personal\gittest\retailmanager\build\classes\test started by vpratap in C:\Viru\Personal\gittest\retailmanager)
+2016-09-06 00:08:40.393  INFO 9196 --- [    Test worker] o.r.init.RetailManagerControllerTest     : No active profile set, falling back to default profiles: default
+2016-09-06 00:08:40.510  INFO 9196 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4c9ab18e: startup date [Tue Sep 06 00:08:40 IST 2016]; root of context hierarchy
+2016-09-06 00:08:42.030  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :null
+2016-09-06 00:08:42.031  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : google key from properties :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
+2016-09-06 00:08:43.024  INFO 9196 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4c9ab18e: startup date [Tue Sep 06 00:08:40 IST 2016]; root of context hierarchy
+2016-09-06 00:08:43.106  INFO 9196 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/shops],methods=[POST],consumes=[application/json],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;org.retailmanager.api.response.ShopsResponse&gt; org.retailmanager.api.RetailsManagerController.addShop(org.retailmanager.api.request.ShopRequest)
+2016-09-06 00:08:43.107  INFO 9196 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/shops],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Collection&lt;org.retailmanager.api.response.ShopsResponse&gt;&gt; org.retailmanager.api.RetailsManagerController.getShops(java.lang.Float,java.lang.Float,java.lang.Integer)
+2016-09-06 00:08:43.110  INFO 9196 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-06 00:08:43.110  INFO 9196 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-06 00:08:43.115  INFO 9196 --- [    Test worker] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: ServletContext resource [/index.html]
+2016-09-06 00:08:43.131  INFO 9196 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-09-06 00:08:43.146  INFO 9196 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-06 00:08:43.146  INFO 9196 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-06 00:08:43.174  INFO 9196 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2016-09-06 00:08:43.205  INFO 9196 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-06 00:08:43.585  INFO 9196 --- [    Test worker] o.r.init.RetailManagerControllerTest     : Started RetailManagerControllerTest in 3.528 seconds (JVM running for 4.647)
+2016-09-06 00:08:43.615  INFO 9196 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-09-06 00:08:43.616  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-09-06 00:08:43.631  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 15 ms
+2016-09-06 00:08:43.703  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : getShops called
+2016-09-06 00:08:43.703  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : Loading search data
+2016-09-06 00:08:43.704  INFO 9196 --- [    Test worker] o.r.rest.bs.RetailManagerService         : getShops called
+2016-09-06 00:08:43.740  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
+2016-09-06 00:08:43.835  INFO 9196 --- [    Test worker] com.google.maps.OkHttpRequestHandler     : Request: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM&amp;latlng=12.79494762%2C80.19866180
+2016-09-06 00:08:45.335  INFO 9196 --- [    Test worker] o.r.g.restclient.GoogleGeoCodeClient     : Vandalur-Kelambakkam Rd, Egattur, Tamil Nadu 603103, India
+2016-09-06 00:08:45.336  INFO 9196 --- [    Test worker] o.r.rest.repository.ShopsRepository      : find all called : 603103
+2016-09-06 00:08:45.336  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : Returning shops count :1
+2016-09-06 00:08:45.410  INFO 9196 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-09-06 00:08:45.410  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-09-06 00:08:45.413  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2016-09-06 00:08:45.489  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : addShop called : org.retailmanager.api.request.ShopRequest@3993d78d
+2016-09-06 00:08:45.490  INFO 9196 --- [    Test worker] o.r.rest.bs.RetailManagerService         : addShop called
+2016-09-06 00:08:45.490  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
+2016-09-06 00:08:45.490  INFO 9196 --- [    Test worker] o.r.g.restclient.GoogleGeoCodeClient     : google key is :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
+2016-09-06 00:08:45.490  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
+2016-09-06 00:08:45.492  INFO 9196 --- [    Test worker] com.google.maps.OkHttpRequestHandler     : Request: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM&amp;components=postal_code%3A603103&amp;address=1600+ags+cinema
+2016-09-06 00:08:45.608  INFO 9196 --- [    Test worker] o.r.g.restclient.GoogleGeoCodeClient     : address compoenent :603103	 type :[Lcom.google.maps.model.AddressComponentType;@35259f17
+2016-09-06 00:08:45.608  INFO 9196 --- [    Test worker] o.r.rest.repository.ShopsRepository      : save called
+2016-09-06 00:08:45.614  INFO 9196 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-09-06 00:08:45.614  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-09-06 00:08:45.616  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2016-09-06 00:08:45.617  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : getShops called
+2016-09-06 00:08:45.617  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : Loading search data
+2016-09-06 00:08:45.617  INFO 9196 --- [    Test worker] o.r.rest.bs.RetailManagerService         : getShops called
+2016-09-06 00:08:45.617  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : google key returning :AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM
+2016-09-06 00:08:45.618  INFO 9196 --- [    Test worker] com.google.maps.OkHttpRequestHandler     : Request: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC-64Ak-bFu7EzcvOvX584RojVP1E6fbSM&amp;latlng=9223372036854776000.00000000%2C9223372036854776000.00000000
+2016-09-06 00:08:45.683  INFO 9196 --- [    Test worker] o.r.api.RetailsManagerController         : No shop found
+2016-09-06 00:08:45.689  INFO 9196 --- [    Test worker] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-09-06 00:08:45.689  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-09-06 00:08:45.693  INFO 9196 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2016-09-06 00:08:45.693  INFO 9196 --- [    Test worker] o.retailmanager.init.BaseTestController  : context loaded successfully
 </pre>
 </span>
 </div>
@@ -193,7 +199,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.0</a> at Sep 5, 2016 3:52:24 PM</p>
+<a href="http://www.gradle.org">Gradle 3.0</a> at Sep 6, 2016 12:08:46 AM</p>
 </div>
 </div>
 </body>
