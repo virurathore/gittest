@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.4.1" timestamp="2016-09-05T15:52:18.493">
+<pmd version="5.4.1" timestamp="2016-09-06T00:08:37.975">
 <file name="C:\Viru\Personal\gittest\retailmanager\src\test\java\org\retailmanager\init\BaseTest.java">
 <violation beginline="3" endline="6" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Controversial" package="org.retailmanager.init" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/controversial.html#AtLeastOneConstructor" priority="3">
 Each class should declare at least one constructor

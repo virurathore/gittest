@@ -69,6 +69,13 @@ public class ShopsRepository implements IShopsRepository {
       return null;
     }
     List<ShopInfo> shopList = null;
+    if (postalCode == null) {
+      shopList = new ArrayList<ShopInfo>();
+      for (ShopInfo shopInfo : shopInfoMap.values()) {
+        shopList.add(shopInfo);
+      }
+      return shopList;
+    }
     for (ShopInfo shopInfo : shopInfoMap.values()) {
       ShopAddress shopAddress = shopInfo.getShopAddress();
       if (shopAddress != null && postalCode.equalsIgnoreCase(shopAddress.getPostCode())) {
