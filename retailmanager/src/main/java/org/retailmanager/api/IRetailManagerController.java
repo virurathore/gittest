@@ -18,9 +18,10 @@ public interface IRetailManagerController {
       produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<ShopsResponse> addShop(@RequestBody ShopRequest shopRequest);
 
+  // all parameter has added for UI app created for testing.
   @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<Collection<ShopsResponse>> getShops(
       @RequestParam("customerLongitude") Float customerLongitude,
-      @RequestParam("customerLatitude") Float customerLatitude);
+      @RequestParam("customerLatitude") Float customerLatitude, @RequestParam("all") Integer all);
 
 }

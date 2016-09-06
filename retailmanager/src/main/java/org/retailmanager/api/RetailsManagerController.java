@@ -46,12 +46,21 @@ public class RetailsManagerController implements IRetailManagerController {
    */
   @Override
   public ResponseEntity<Collection<ShopsResponse>> getShops(Float customerLongitude,
-      Float customerLatitude) {
+      Float customerLatitude, Integer all) {
     logger.info("getShops called");
-    ShopGeoInfo shopGeoInfo = new ShopGeoInfo();
-    shopGeoInfo.setShopLatitude(customerLatitude);
-    shopGeoInfo.setShopLongitude(customerLongitude);
-    Collection<ShopInfo> shops = retailManager.getShops(shopGeoInfo);
+    Collection<ShopInfo> shops = null;
+    if (all != null && all.intValue() == 1) {
+      logger.info("Loading all data");
+      shops = retailManager.getAll();
+    } else {
+      logger.info("Loading search data");
+      ShopGeoInfo shopGeoInfo = new ShopGeoInfo();
+
+      shopGeoInfo.setShopLatitude(customerLatitude);
+      shopGeoInfo.setShopLongitude(customerLongitude);
+      shops = retailManager.getShops(shopGeoInfo);
+    }
+
     List<ShopsResponse> shopsList = null;
     if (shops != null) {
       for (ShopInfo shopInfo : shops) {
@@ -62,8 +71,10 @@ public class RetailsManagerController implements IRetailManagerController {
       }
     }
     if (shopsList != null) {
+      logger.info("Returning shops count :" + shopsList.size());
       return new ResponseEntity<Collection<ShopsResponse>>(shopsList, HttpStatus.OK);
     } else {
+      logger.info("No shop found");
       return new ResponseEntity<Collection<ShopsResponse>>(shopsList, HttpStatus.NO_CONTENT);
     }
   }

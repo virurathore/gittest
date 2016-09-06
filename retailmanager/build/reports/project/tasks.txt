@@ -1,0 +1,74 @@
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Application tasks
+-----------------
+bootRun - Run the project with support for auto-detecting main class and reloading static resources
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+bootRepackage - Repackage existing JAR and WAR archives so that they can be executed from the command line using 'java -jar'
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the main classes.
+testClasses - Assembles test classes.
+war - Generates a war archive with all the compiled classes, the web-app content and the libraries.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build. [incubating]
+wrapper - Generates Gradle wrapper files. [incubating]
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the main source code.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'RetailManager'.
+components - Displays the components produced by root project 'RetailManager'. [incubating]
+dependencies - Displays all dependencies declared in root project 'RetailManager'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'RetailManager'.
+help - Displays a help message.
+model - Displays the configuration model of root project 'RetailManager'. [incubating]
+projects - Displays the sub-projects of root project 'RetailManager'.
+properties - Displays the properties of root project 'RetailManager'.
+tasks - Displays the tasks runnable from root project 'RetailManager'.
+
+IDE tasks
+---------
+cleanEclipse - Cleans all Eclipse files.
+cleanEclipseWtp - Cleans Eclipse wtp configuration files.
+eclipse - Generates all Eclipse files.
+eclipseWtp - Generates Eclipse wtp configuration files.
+
+Reporting tasks
+---------------
+buildDashboard - Generates a dashboard of all the reports produced by this build.
+projectReport - Generates a report about your project.
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the unit tests.
+
+Other tasks
+-----------
+dependencyManagement
+install - Installs the 'archives' artifacts into the local Maven repository.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+
+To see all tasks and more detail, run gradle tasks --all
+
+To see more detail about a task, run gradle help --task <task>

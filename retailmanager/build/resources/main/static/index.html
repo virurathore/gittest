@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<meta charset="ISO-8859-1">
+<title>RetailManager</title>
+
+<script>
+	function ConvertFormToShopJSON(form) {
+		var array = jQuery(form).serializeArray();
+		var json = {};
+		var address = {};
+		jQuery.each(array, function() {
+			if (this.name == "shopName") {
+				json[this.name] = this.value || '';
+			} else {
+				address[this.name] = this.value || '';
+			}
+		});
+		//alert(JSON.stringify(address));
+		json["shopAddress"] = address;
+		//alert(JSON.stringify(json));
+		return JSON.stringify(json);
+	}
+	function addRow(jsondata){
+		var tbody = jQuery('#myTable > tbody');
+		var row= '<tr>';
+		 console.log(" row data : "+JSON.stringify(jsondata));
+		 row += '<td>' + jsondata['shopsName'] +'</td>';
+		 row += '<td>' + jsondata['shopAddress']['number'] +'</td>';
+		 row += '<td>' + jsondata['shopAddress']['postCode'] +'</td>';
+		 row += '<td>' + jsondata['shopLongitude'] +'</td>';
+		 row += '<td>' + jsondata['shopLatitude'] +'</td>';
+			row += '</tr>';
+			tbody.append(row);
+	}
+	$(function(){
+		$( "[data-role='header'], [data-role='footer']" ).toolbar();
+		 $('#myTable > tbody').empty();
+	});
+	jQuery(document).on('ready', function() {
+		jQuery('form#search-shop').bind('submit', function(event) {
+			event.preventDefault();
+			var form = this;
+			var qs = $(form).serialize();
+			var searchurl = "/api/shops?" + qs;
+			//alert("hitting : " + searchurl);
+			$.ajax({
+				type : "GET",
+				url : searchurl,
+			}).done(function(jsondata) {
+				if(jsondata)
+				$('#myTable > tbody').empty();
+				console.log("success");
+				 for(var i=0; i<jsondata.length; ++i ){
+					 addRow(jsondata[i]);
+				 } 
+			}).fail(function() {
+				alert("No shop found near by");
+				console.log("failed");
+			});
+
+		});
+		jQuery('form#add-new-shop').bind('submit', function(event) {
+			event.preventDefault();
+
+			var form = this;
+			var json = ConvertFormToShopJSON(form);
+			console.log("json :" + json);
+			$.ajax({
+				type : "POST",
+				url : "/api/shops",
+				data : json,
+				contentType : "application/json; charset=utf-8",
+				dataType : "json"
+			}).done(function(jsondata) {
+				console.log("success");
+				//alert(jsondata);
+				 addRow(jsondata);
+			}).fail(function() {
+				console.log("failed");
+			});
+
+			var tbody = jQuery('#myTable > tbody');
+
+			return true;
+		});
+	});
+</script>
+
+</head>
+<body>
+		<div data-role="header">
+			<a href="#addpage" class="ui-btn ui-icon-plus ui-btn-icon-left">AddShop</a>
+			<h1>Welcome To Retail Manager</h1>
+			<a href="#searchpage" class="ui-btn ui-icon-search ui-btn-icon-left">Search</a>
+		</div>
+	<div data-role="page" id="addpage">
+			<h1>Add new Shops!</h1>
+		<div data-role="main" class="ui-content">
+			<form method="post" action="api/shops" name="add-new-shop"
+				id="add-new-shop">
+				<label for="shopName">Shop Name:</label> <input type="text"
+					name="shopName" id="shopName"> <label for="number">Number
+					:</label> <input type="text" name="number" id="number"> <label
+					for="postCode">Postal Code:</label> <input type="text"
+					name="postCode" id="postCode"> <input type="submit"
+					data-inline="true" value="Submit">
+			</form>
+		</div>
+		<!-- display newly added shop -->
+		<div id="resp">
+					<table data-role="table" 
+						class="ui-responsive ui-body-d ui-shadow table-stripe" data-theme="a" id="myTable">
+						<thead>
+							<tr class="ui-bar-d">
+								<th>shopsName</th>
+								<th data-priority="4">number</th>
+								<th data-priority="3">postCode</th>
+								<th data-priority="1">shopLongitude</th>
+								<th data-priority="2">shopLatitude</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+		
+		</div>
+
+	</div>
+	<!-- search page -->
+	<div data-role="page" id="searchpage">
+			<h1>Search NearBy Shops!</h1>
+		<div data-role="main" class="ui-content">
+			<div data-role="main" class="ui-content">
+				<form method="get" action="api/shops" name="search-shop"
+					id="search-shop">
+
+					<label for="customerLongitude">customerLongitude :</label> <input
+						type="text" name="customerLongitude" id="customerLongitude">
+
+					<label for="customerLatitude">customerLatitude :</label> <input
+						type="text" name="customerLatitude" id="customerLatitude">
+					<input type="submit" data-inline="true" value="Submit">
+				</form>
+				<div id="searchresp">
+					<table data-role="table" 
+						class="ui-responsive ui-body-d ui-shadow table-stripe" data-theme="a" id="myTable">
+						<thead>
+							<tr class="ui-bar-d">
+								<th>shopsName</th>
+								<th data-priority="4">number</th>
+								<th data-priority="3">postCode</th>
+								<th data-priority="1">shopLongitude</th>
+								<th data-priority="2">shopLatitude</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer">
+			<h1>Thanks for visiting us</h1>
+		</div>
+</body>
+</html>
