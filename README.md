@@ -15,6 +15,7 @@ use following commands
 
 #Test using postman collection 
 	use retailmanager postman collection added in github.
+	You can test service from cloud follow [http://viru-retailmanager.cfapps.io]
 
 #Build Reports 
 Project have build reports. These reports can access from build/reports/buildDashboard/index.html. These reports generated when you use gradle as build tool and run command ``` gradle build ```
