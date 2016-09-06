@@ -33,6 +33,7 @@ Project have build reports. These reports can access from build/reports/buildDas
 We list technical items to taken care for production ready
 * Need to use profile based configuration(dev/qa/production), which help configure information like google API key used to access geocode data, or using DB connection or different rest-service(google geo code).
 * Pagination required for search API, there might be long list of result-set. 
+* Production build should have added Cobertura Code Coverage, Findbugs Reports.
 * Transactional semantics: This require for operation to be complaint with commit/rollback/failover instead of putting data in half updated in system.
 * Caching : This require to handle based on MRU(most recently used) data should be cache as 20% of data reused 80% of time, so if we cache data, we don't require to fetch data from down layer.
 * Authentication: This requires handling legitimate user has access of service.
