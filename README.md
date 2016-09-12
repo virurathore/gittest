@@ -10,9 +10,11 @@ use following commands
 * to build package for production.
 ``` mvn clean package ```  
 ``` gradle build ```  
-* run service 
+* mvn jar run service 
 ``` java -jar target/RetailManager-0.0.1-SNAPSHOT.jar ```
+* gradle jar run service 
 ``` java -jar build/lilbs/retailmanager-0.0.1-SNAPSHOT.jar ```
+
 
 #Test using postman collection 
 	use retailmanager postman collection added in github.
