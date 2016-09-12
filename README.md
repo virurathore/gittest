@@ -11,7 +11,8 @@ use following commands
 ``` mvn clean package ```  
 ``` gradle build ```  
 * run service 
-``` java -jar target/rest-0.0.1-SNAPSHOT.jar ```
+``` java -jar target/RetailManager-0.0.1-SNAPSHOT.jar ```
+``` java -jar build/lilbs/retailmanager-0.0.1-SNAPSHOT.jar ```
 
 #Test using postman collection 
 	use retailmanager postman collection added in github.
