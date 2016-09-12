@@ -8,12 +8,15 @@ buildscript {
         maven { url 'http://repo.spring.io/snapshot' }
         maven { url 'http://repo.spring.io/milestone' } 
         maven { url 'http://repo.spring.io/libs-release' }
+		maven { url 'https://plugins.gradle.org/m2/' }
     }
     dependencies {
        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
        classpath "io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE"
+	   classpath 'com.eriwen:gradle-js-plugin:2.14.1'
     }
 }
+apply plugin: 'com.eriwen.gradle.js'
 apply plugin: 'war'
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -25,6 +28,9 @@ apply plugin: 'build-dashboard'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
 
+bootRepackage { 
+	classifier = 'exec' 
+}
 
 jar {
 	baseName = 'retailmanager'
@@ -76,6 +82,41 @@ pmd {
   toolVersion = pmdVersion
   ruleSetConfig = rootProject.resources.text.fromFile('etc/pmd/ruleset.xml')
   ignoreFailures = true
+}
+
+
+// Declare your sources
+javascript.source {
+    dev {
+        js {
+            srcDir 'src/main/resources/static'
+            include "*.js"
+            exclude "*.min.js"
+        }
+    }
+    prod {
+        js {
+            srcDir 'src/main/resources/static'
+            include "*.min.js"
+        }
+    }
+}
+
+// Configure the built-in task
+//https://github.com/eriwen/gradle-js-plugin
+combineJs {
+    encoding = "UTF-8"
+    source = javascript.source.dev.js.files
+    dest = file("${buildDir}/retailmanager.js")
+}
+
+minifyJs {
+	source = combineJs
+    dest = file("${buildDir}/resources/main/static/retailmanager-min.js")
+    sourceMap = file("${buildDir}/retailmanager.sourcemap.json")
+    closure {
+        warningLevel = 'QUIET'
+    }
 }
 
 check.finalizedBy projectReport

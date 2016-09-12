@@ -289,6 +289,9 @@ No dependencies
 providedRuntime - Additional runtime classpath for libraries that should not be part of the WAR archive.
 No dependencies
 
+rhino
+\--- org.mozilla:rhino:1.7R3
+
 runtime - Runtime dependencies for source set 'main'.
 +--- org.springframework.boot:spring-boot-starter: -> 1.3.5.RELEASE
 |    +--- org.springframework.boot:spring-boot:1.3.5.RELEASE

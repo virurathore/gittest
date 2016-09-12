@@ -5,13 +5,13 @@ Root project
 
 BootRepackage: class org.springframework.boot.gradle.repackage.RepackageTask
 allprojects: [root project 'RetailManager']
-ant: org.gradle.api.internal.project.DefaultAntBuilder@3dd4413d
-antBuilderFactory: org.gradle.api.internal.project.DefaultAntBuilderFactory@22207bce
+ant: org.gradle.api.internal.project.DefaultAntBuilder@53792d5b
+antBuilderFactory: org.gradle.api.internal.project.DefaultAntBuilderFactory@359fcb56
 archivesBaseName: RetailManager
-artifacts: org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@1fb1a103
+artifacts: org.gradle.api.internal.artifacts.dsl.DefaultArtifactHandler_Decorated@22223a0c
 asDynamicObject: DynamicObject for root project 'RetailManager'
 assemble: task ':assemble'
-baseClassLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@30600e48
+baseClassLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@2d792fd6
 bootRepackage: task ':bootRepackage'
 bootRun: task ':bootRun'
 build: task ':build'
@@ -20,17 +20,18 @@ buildDependents: task ':buildDependents'
 buildDir: C:\Viru\Personal\gittest\retailmanager\build
 buildFile: C:\Viru\Personal\gittest\retailmanager\build.gradle
 buildNeeded: task ':buildNeeded'
-buildScriptSource: org.gradle.groovy.scripts.UriScriptSource@2f226cd0
-buildscript: org.gradle.api.internal.initialization.DefaultScriptHandler@efd9cf1
+buildScriptSource: org.gradle.groovy.scripts.UriScriptSource@37f0dcd7
+buildscript: org.gradle.api.internal.initialization.DefaultScriptHandler@7cfe6404
 check: task ':check'
-checkstyle: org.gradle.api.plugins.quality.CheckstyleExtension_Decorated@1cd69d94
+checkstyle: org.gradle.api.plugins.quality.CheckstyleExtension_Decorated@4fbfd3cd
 checkstyleMain: task ':checkstyleMain'
 checkstyleTest: task ':checkstyleTest'
 checkstyleVersion: 6.16.1
 childProjects: {}
 class: class org.gradle.api.internal.project.DefaultProject_Decorated
-classLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@2c74d208
+classLoaderScope: org.gradle.api.internal.initialization.DefaultClassLoaderScope@2bdc4273
 classes: task ':classes'
+clean: task ':clean'
 cleanEclipse: task ':cleanEclipse'
 cleanEclipseClasspath: task ':cleanEclipseClasspath'
 cleanEclipseJdt: task ':cleanEclipseJdt'
@@ -38,20 +39,22 @@ cleanEclipseProject: task ':cleanEclipseProject'
 cleanEclipseWtp: task ':cleanEclipseWtp'
 cleanEclipseWtpComponent: task ':cleanEclipseWtpComponent'
 cleanEclipseWtpFacet: task ':cleanEclipseWtpFacet'
+closure: com.eriwen.gradle.js.ClosureCompilerExtension_Decorated@1a7b35bb
+combineJs: task ':combineJs'
 compileJava: task ':compileJava'
 compileTestJava: task ':compileTestJava'
-components: [org.gradle.api.internal.java.JavaLibrary@100c7fba, org.gradle.api.internal.java.WebApplication@72f4735e]
-conf2ScopeMappings: org.gradle.api.publication.maven.internal.pom.DefaultConf2ScopeMappingContainer@218d8307
-configurationActions: org.gradle.configuration.project.DefaultProjectConfigurationActionContainer@5ae66aa9
-configurations: [configuration ':archives', configuration ':checkstyle', configuration ':compile', configuration ':compileClasspath', configuration ':compileOnly', configuration ':default', configuration ':pmd', configuration ':providedCompile', configuration ':providedRuntime', configuration ':runtime', configuration ':testCompile', configuration ':testCompileClasspath', configuration ':testCompileOnly', configuration ':testRuntime']
-convention: org.gradle.api.internal.plugins.DefaultConvention@5088076f
-defaultArtifacts: org.gradle.api.internal.plugins.DefaultArtifactPublicationSet_Decorated@230a536b
+components: [org.gradle.api.internal.java.JavaLibrary@15aabcb4, org.gradle.api.internal.java.WebApplication@243a3477]
+conf2ScopeMappings: org.gradle.api.publication.maven.internal.pom.DefaultConf2ScopeMappingContainer@d18346e5
+configurationActions: org.gradle.configuration.project.DefaultProjectConfigurationActionContainer@6d3c2559
+configurations: [configuration ':archives', configuration ':checkstyle', configuration ':compile', configuration ':compileClasspath', configuration ':compileOnly', configuration ':default', configuration ':pmd', configuration ':providedCompile', configuration ':providedRuntime', configuration ':rhino', configuration ':runtime', configuration ':testCompile', configuration ':testCompileClasspath', configuration ':testCompileOnly', configuration ':testRuntime']
+convention: org.gradle.api.internal.plugins.DefaultConvention@2ea903a8
+defaultArtifacts: org.gradle.api.internal.plugins.DefaultArtifactPublicationSet_Decorated@6e2645d5
 defaultTasks: []
-deferredProjectConfiguration: org.gradle.api.internal.project.DeferredProjectConfiguration@7235bad7
-dependencies: org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler_Decorated@1b6f251a
+deferredProjectConfiguration: org.gradle.api.internal.project.DeferredProjectConfiguration@1b4a5dea
+dependencies: org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler_Decorated@1750b537
 dependencyCacheDir: C:\Viru\Personal\gittest\retailmanager\build\dependency-cache
 dependencyCacheDirName: dependency-cache
-dependencyManagement: io.spring.gradle.dependencymanagement.DependencyManagementExtension_Decorated@bccfa67
+dependencyManagement: io.spring.gradle.dependencymanagement.DependencyManagementExtension_Decorated@71025036
 dependencyReport: task ':dependencyReport'
 depth: 0
 description: 
@@ -59,80 +62,90 @@ distsDir: C:\Viru\Personal\gittest\retailmanager\build\distributions
 distsDirName: distributions
 docsDir: C:\Viru\Personal\gittest\retailmanager\build\docs
 docsDirName: docs
-eclipse: org.gradle.plugins.ide.eclipse.model.EclipseModel_Decorated@7a2c717e
+eclipse: org.gradle.plugins.ide.eclipse.model.EclipseModel_Decorated@2d56bb2e
 eclipseClasspath: task ':eclipseClasspath'
 eclipseJdt: task ':eclipseJdt'
 eclipseProject: task ':eclipseProject'
 eclipseWtp: task ':eclipseWtp'
 eclipseWtpComponent: task ':eclipseWtpComponent'
 eclipseWtpFacet: task ':eclipseWtpFacet'
-ext: org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension@25108fee
-extensions: org.gradle.api.internal.plugins.DefaultConvention@5088076f
-fileOperations: org.gradle.api.internal.file.DefaultFileOperations@47b539a3
-fileResolver: org.gradle.api.internal.file.BaseDirFileResolver@2b46fcf0
+ext: org.gradle.api.internal.plugins.DefaultExtraPropertiesExtension@643a1663
+extensions: org.gradle.api.internal.plugins.DefaultConvention@2ea903a8
+fileOperations: org.gradle.api.internal.file.DefaultFileOperations@76d1fede
+fileResolver: org.gradle.api.internal.file.BaseDirFileResolver@153183d2
 findMainClass: task ':findMainClass'
 gradle: build 'RetailManager'
 group: org.retailmanager
+gzipJs: task ':gzipJs'
+html2js: task ':html2js'
 htmlDependencyReport: task ':htmlDependencyReport'
-inheritedScope: org.gradle.api.internal.ExtensibleDynamicObject$InheritedDynamicObject@3278df67
+inheritedScope: org.gradle.api.internal.ExtensibleDynamicObject$InheritedDynamicObject@d26d591
 install: task ':install'
 jar: task ':jar'
 javadoc: task ':javadoc'
+javascript: com.eriwen.gradle.js.JavaScriptExtension_Decorated@399b5358
+jsdoc: com.eriwen.gradle.js.JsDocExtension_Decorated@40c57dbb
+jshint: com.eriwen.gradle.js.JsHintExtension_Decorated@59f34962
 libsDir: C:\Viru\Personal\gittest\retailmanager\build\libs
 libsDirName: libs
-logger: org.gradle.internal.logging.slf4j.OutputEventListenerBackedLogger@4ac73a91
-logging: org.gradle.internal.logging.services.DefaultLoggingManager@13b65939
+logger: org.gradle.internal.logging.slf4j.OutputEventListenerBackedLogger@62429590
+logging: org.gradle.internal.logging.services.DefaultLoggingManager@1a00b13
 mainClassName: org.retailmanager.init.Application
 mavenPomDir: C:\Viru\Personal\gittest\retailmanager\build\poms
-modelRegistry: org.gradle.model.internal.registry.DefaultModelRegistry@7da002cd
-modelSchemaStore: org.gradle.model.internal.manage.schema.extract.DefaultModelSchemaStore@6d4833b0
-module: org.gradle.api.internal.artifacts.ProjectBackedModule@29a8d335
+minifyJs: task ':minifyJs'
+modelRegistry: org.gradle.model.internal.registry.DefaultModelRegistry@6ae39639
+modelSchemaStore: org.gradle.model.internal.manage.schema.extract.DefaultModelSchemaStore@29986a5e
+module: org.gradle.api.internal.artifacts.ProjectBackedModule@2445f92f
 name: RetailManager
 org.gradle.eclipse.postprocess.applied: true
 parent: null
 parentIdentifier: null
 path: :
-pluginManager: org.gradle.api.internal.plugins.DefaultPluginManager_Decorated@611dd0f5
-plugins: [org.gradle.api.plugins.HelpTasksPlugin@681b42ab, org.gradle.language.base.plugins.LifecycleBasePlugin@a979d2f, org.gradle.api.plugins.BasePlugin@3f7bbb97, org.gradle.api.plugins.ReportingBasePlugin@1d3b050d, org.gradle.platform.base.plugins.ComponentBasePlugin@81183af, org.gradle.language.base.plugins.LanguageBasePlugin@4d47fccd, org.gradle.platform.base.plugins.BinaryBasePlugin@35c10ea2, org.gradle.api.plugins.JavaBasePlugin@4a9d6be0, org.gradle.api.plugins.JavaPlugin@7a3bebfc, org.gradle.api.plugins.WarPlugin@61e8aed4, org.gradle.api.plugins.MavenPlugin@124c7e82, org.gradle.plugins.ide.eclipse.EclipseWtpPlugin@575000c8, org.gradle.plugins.ide.eclipse.EclipsePlugin@49a7ee37, io.spring.gradle.dependencymanagement.DependencyManagementPlugin@3daa41a5, org.springframework.boot.gradle.SpringBootPlugin@7cda0405, org.gradle.api.plugins.ProjectReportsPlugin@7234b5b3, org.gradle.api.reporting.plugins.BuildDashboardPlugin@1f9495cb, org.gradle.api.plugins.quality.CheckstylePlugin@735f182a, org.gradle.api.plugins.quality.PmdPlugin@53695166]
-pmd: org.gradle.api.plugins.quality.PmdExtension_Decorated@15eab856
+pluginManager: org.gradle.api.internal.plugins.DefaultPluginManager_Decorated@5f0094e8
+plugins: [org.gradle.api.plugins.HelpTasksPlugin@2207cd, com.eriwen.gradle.js.JsPlugin@44b51abd, org.gradle.language.base.plugins.LifecycleBasePlugin@29a1fab8, org.gradle.api.plugins.BasePlugin@9694609, org.gradle.api.plugins.ReportingBasePlugin@7c6f922c, org.gradle.platform.base.plugins.ComponentBasePlugin@5ff3955d, org.gradle.language.base.plugins.LanguageBasePlugin@2823d85a, org.gradle.platform.base.plugins.BinaryBasePlugin@571e9749, org.gradle.api.plugins.JavaBasePlugin@22e393c9, org.gradle.api.plugins.JavaPlugin@2f4ea7b9, org.gradle.api.plugins.WarPlugin@2a21710e, org.gradle.api.plugins.MavenPlugin@1f846731, org.gradle.plugins.ide.eclipse.EclipseWtpPlugin@6eb5f2f, org.gradle.plugins.ide.eclipse.EclipsePlugin@5392cfb6, io.spring.gradle.dependencymanagement.DependencyManagementPlugin@178fb60b, org.springframework.boot.gradle.SpringBootPlugin@36c84912, org.gradle.api.plugins.ProjectReportsPlugin@1e98eaa3, org.gradle.api.reporting.plugins.BuildDashboardPlugin@6dfeb0d7, org.gradle.api.plugins.quality.CheckstylePlugin@597faa5a, org.gradle.api.plugins.quality.PmdPlugin@334f4e65]
+pmd: org.gradle.api.plugins.quality.PmdExtension_Decorated@5e79f488
 pmdMain: task ':pmdMain'
 pmdTest: task ':pmdTest'
 pmdVersion: 5.4.1
-processOperations: org.gradle.api.internal.file.DefaultFileOperations@47b539a3
+processOperations: org.gradle.api.internal.file.DefaultFileOperations@76d1fede
 processResources: task ':processResources'
 processTestResources: task ':processTestResources'
 project: root project 'RetailManager'
 projectDir: C:\Viru\Personal\gittest\retailmanager
 projectEvaluationBroadcaster: ProjectEvaluationListener broadcast
-projectEvaluator: org.gradle.configuration.project.LifecycleProjectEvaluator@34345443
-projectRegistry: org.gradle.api.internal.project.DefaultProjectRegistry@49ff9e62
+projectEvaluator: org.gradle.configuration.project.LifecycleProjectEvaluator@28dde320
+projectRegistry: org.gradle.api.internal.project.DefaultProjectRegistry@42fdb6ff
 projectReport: task ':projectReport'
 projectReportDir: C:\Viru\Personal\gittest\retailmanager\build\reports\project
 projectReportDirName: project
 projects: [root project 'RetailManager']
 properties: {...}
 propertyReport: task ':propertyReport'
-reporting: org.gradle.api.reporting.ReportingExtension_Decorated@46ea65d0
+props: com.eriwen.gradle.js.Props2JsExtension_Decorated@1901dd9c
+props2js: task ':props2js'
+reporting: org.gradle.api.reporting.ReportingExtension_Decorated@8cda780
 reportsDir: C:\Viru\Personal\gittest\retailmanager\build\reports
-repositories: [org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@6824d53]
-resources: org.gradle.api.internal.resources.DefaultResourceHandler@1002978c
+repositories: [org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@4fce915a]
+requireJs: task ':requireJs'
+requirejs: com.eriwen.gradle.js.RequireJsExtension_Decorated@60ab9c12
+resources: org.gradle.api.internal.resources.DefaultResourceHandler@77d140a6
 rootDir: C:\Viru\Personal\gittest\retailmanager
 rootProject: root project 'RetailManager'
-scriptHandlerFactory: org.gradle.api.internal.initialization.DefaultScriptHandlerFactory@253b1760
-scriptPluginFactory: org.gradle.configuration.ScriptPluginFactorySelector@30ea32f2
-serviceRegistryFactory: org.gradle.internal.service.scopes.ProjectScopeServices$4@24160969
+scriptHandlerFactory: org.gradle.api.internal.initialization.DefaultScriptHandlerFactory@12c5087b
+scriptPluginFactory: org.gradle.configuration.ScriptPluginFactorySelector@29ba0f38
+serviceRegistryFactory: org.gradle.internal.service.scopes.ProjectScopeServices$4@15cd4d11
 services: ProjectScopeServices
 sourceCompatibility: 1.8
 sourceSets: [source set 'main', source set 'test']
-springBoot: org.springframework.boot.gradle.SpringBootPluginExtension_Decorated@20ac4490
+springBoot: org.springframework.boot.gradle.SpringBootPluginExtension_Decorated@6864eb7e
 springBootVersion: 1.3.5.RELEASE
-standardOutputCapture: org.gradle.internal.logging.services.DefaultLoggingManager@13b65939
+standardOutputCapture: org.gradle.internal.logging.services.DefaultLoggingManager@1a00b13
 state: project state 'EXECUTED'
 status: integration
 subprojects: []
 targetCompatibility: 1.8
 taskReport: task ':taskReport'
-tasks: [task ':assemble', task ':bootRepackage', task ':bootRun', task ':build', task ':buildDashboard', task ':buildDependents', task ':buildNeeded', task ':check', task ':checkstyleMain', task ':checkstyleTest', task ':classes', task ':cleanEclipse', task ':cleanEclipseClasspath', task ':cleanEclipseJdt', task ':cleanEclipseProject', task ':cleanEclipseWtp', task ':cleanEclipseWtpComponent', task ':cleanEclipseWtpFacet', task ':compileJava', task ':compileTestJava', task ':dependencyManagement', task ':dependencyReport', task ':eclipse', task ':eclipseClasspath', task ':eclipseJdt', task ':eclipseProject', task ':eclipseWtp', task ':eclipseWtpComponent', task ':eclipseWtpFacet', task ':findMainClass', task ':htmlDependencyReport', task ':install', task ':jar', task ':javadoc', task ':pmdMain', task ':pmdTest', task ':processResources', task ':processTestResources', task ':projectReport', task ':propertyReport', task ':taskReport', task ':test', task ':testClasses', task ':war']
+tasks: [task ':assemble', task ':bootRepackage', task ':bootRun', task ':build', task ':buildDashboard', task ':buildDependents', task ':buildNeeded', task ':check', task ':checkstyleMain', task ':checkstyleTest', task ':classes', task ':clean', task ':cleanEclipse', task ':cleanEclipseClasspath', task ':cleanEclipseJdt', task ':cleanEclipseProject', task ':cleanEclipseWtp', task ':cleanEclipseWtpComponent', task ':cleanEclipseWtpFacet', task ':combineJs', task ':compileJava', task ':compileTestJava', task ':dependencyManagement', task ':dependencyReport', task ':eclipse', task ':eclipseClasspath', task ':eclipseJdt', task ':eclipseProject', task ':eclipseWtp', task ':eclipseWtpComponent', task ':eclipseWtpFacet', task ':findMainClass', task ':gzipJs', task ':html2js', task ':htmlDependencyReport', task ':install', task ':jar', task ':javadoc', task ':jsdoc', task ':jshint', task ':minifyJs', task ':pmdMain', task ':pmdTest', task ':processResources', task ':processTestResources', task ':projectReport', task ':propertyReport', task ':props2js', task ':requireJs', task ':taskReport', task ':test', task ':testClasses', task ':war']
 test: task ':test'
 testClasses: task ':testClasses'
 testReportDir: C:\Viru\Personal\gittest\retailmanager\build\reports\tests
