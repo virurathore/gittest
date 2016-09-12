@@ -8,16 +8,14 @@ buildscript {
         maven { url 'http://repo.spring.io/snapshot' }
         maven { url 'http://repo.spring.io/milestone' } 
         maven { url 'http://repo.spring.io/libs-release' }
-		maven { url 'https://plugins.gradle.org/m2/' }
-    }
+ 		maven { url 'https://plugins.gradle.org/m2/' }
+   }
     dependencies {
        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
        classpath "io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE"
 	   classpath 'com.eriwen:gradle-js-plugin:2.14.1'
     }
 }
-apply plugin: 'com.eriwen.gradle.js'
-apply plugin: 'war'
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
@@ -27,19 +25,12 @@ apply plugin: 'project-report'
 apply plugin: 'build-dashboard'
 apply plugin: 'checkstyle'
 apply plugin: 'pmd'
+apply plugin: 'com.eriwen.gradle.js'
 
-bootRepackage { 
-	classifier = 'exec' 
-}
 
 jar {
 	baseName = 'retailmanager'
 	version = '0.0.1-SNAPSHOT'
-}
-
-war {
-	baseName = 'retailmanager'
-	version = '0.0.1-RELEASE'
 }
 
 group = 'org.retailmanager'
@@ -83,8 +74,6 @@ pmd {
   ruleSetConfig = rootProject.resources.text.fromFile('etc/pmd/ruleset.xml')
   ignoreFailures = true
 }
-
-
 // Declare your sources
 javascript.source {
     dev {

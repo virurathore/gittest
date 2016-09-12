@@ -24,7 +24,6 @@ minifyJs - Minify JavaScript using Closure Compiler
 props2js - Convert Java properties files for use with JavaScript
 requireJs - Run the r.js Optimizer to produce Require.js output
 testClasses - Assembles test classes.
-war - Generates a war archive with all the compiled classes, the web-app content and the libraries.
 
 Build Setup tasks
 -----------------
@@ -51,9 +50,7 @@ tasks - Displays the tasks runnable from root project 'RetailManager'.
 IDE tasks
 ---------
 cleanEclipse - Cleans all Eclipse files.
-cleanEclipseWtp - Cleans Eclipse wtp configuration files.
 eclipse - Generates all Eclipse files.
-eclipseWtp - Generates Eclipse wtp configuration files.
 
 Reporting tasks
 ---------------

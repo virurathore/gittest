@@ -1,3 +1,5 @@
+org\retailmanager\geocode\restclient\GoogleKey.class
+org\retailmanager\api\request\ShopRequest.class
 org\retailmanager\rest\modal\ShopInfo.class
 org\retailmanager\rest\repository\ShopsRepository.class
 org\retailmanager\api\RetailsManagerController.class
@@ -6,6 +8,7 @@ org\retailmanager\rest\repository\IShopsRepository.class
 org\retailmanager\rest\modal\StoreGeoCode.class
 org\retailmanager\api\error\GlobalExceptionHandler.class
 org\retailmanager\api\IRetailManagerController.class
+org\retailmanager\api\response\ShopsResponse.class
 org\retailmanager\geocode\restclient\IGoogleGeoCodeClient.class
 org\retailmanager\geocode\restclient\GoogleGeoCodeClient.class
 org\retailmanager\rest\bs\IRetailsManager.class

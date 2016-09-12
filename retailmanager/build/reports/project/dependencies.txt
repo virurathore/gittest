@@ -283,12 +283,6 @@ pmd - The PMD libraries to be used for this project.
      +--- net.sourceforge.saxon:saxon:9.1.0.8
      \--- org.ow2.asm:asm:5.0.4
 
-providedCompile - Additional compile classpath for libraries that should not be part of the WAR archive.
-No dependencies
-
-providedRuntime - Additional runtime classpath for libraries that should not be part of the WAR archive.
-No dependencies
-
 rhino
 \--- org.mozilla:rhino:1.7R3
 
