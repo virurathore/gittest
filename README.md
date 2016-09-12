@@ -7,12 +7,13 @@ This is retail manager rest service, which provide 2 API to expose
 #How to build and execute
 Its usages Maven/gradle to build and packaging.
 use following commands
-* to build package for production.
+* to build package for using mvn.
 ``` mvn clean package ```  
-``` gradle build ```  
-* mvn jar run service 
+* Run mvn jar 
 ``` java -jar target/RetailManager-0.0.1-SNAPSHOT.jar ```
-* gradle jar run service 
+* to build package for using gradle, use 'build' to get all reports with package, or use 'bootRepackage' for just runable jar.
+``` gradle build ```  
+* Run gradle jar  
 ``` java -jar build/lilbs/retailmanager-0.0.1-SNAPSHOT.jar ```
 
 
